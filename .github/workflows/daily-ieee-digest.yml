@@ -3,15 +3,18 @@ name: Daily IEEE Digest
 
 on:
   schedule:
-    # Temporary schedule test: every 5 minutes.
-    - cron: "*/5 * * * *"
+    # 08:00 Beijing time (UTC+8)
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
 jobs:
   send-digest:
     runs-on: ubuntu-latest
+    concurrency:
+      group: daily-ieee-digest
+      cancel-in-progress: false
     permissions:
-      contents: read
+      contents: write
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -31,4 +34,17 @@ jobs:
           MAIL_FROM: ${{ secrets.MAIL_FROM }}
           DIGEST_DAYS_BACK: "1095"
           DIGEST_MAX_ARTICLES: "2"
-        run: python scripts/daily_ieee_digest.py --config config/journals.json --send
+          DIGEST_ROWS_PER_JOURNAL: "100"
+        run: python scripts/daily_ieee_digest.py --config config/journals.json --send --update-history
+
+      - name: Commit sent history
+        run: |
+          if git diff --quiet -- data/sent_history.json; then
+            echo "No sent history changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/sent_history.json
+          git commit -m "Record sent IEEE digest articles"
+          git push

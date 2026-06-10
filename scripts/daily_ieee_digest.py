@@ -46,6 +46,48 @@ def load_config(path: str) -> dict[str, Any]:
         return json.load(f)
 
 
+def load_history(path: str) -> dict[str, Any]:
+    if not os.path.exists(path):
+        return {"sent": []}
+    with open(path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    if not isinstance(data, dict) or not isinstance(data.get("sent"), list):
+        raise ValueError(f"Invalid history file: {path}")
+    return data
+
+
+def history_dois(history: dict[str, Any]) -> set[str]:
+    return {
+        str(item.get("doi", "")).lower()
+        for item in history.get("sent", [])
+        if isinstance(item, dict) and item.get("doi")
+    }
+
+
+def update_history(path: str, history: dict[str, Any], articles: list["Candidate"]) -> None:
+    sent = history.setdefault("sent", [])
+    existing = history_dois(history)
+    today = dt.date.today().isoformat()
+    for article in articles:
+        doi_key = article.doi.lower()
+        if doi_key in existing:
+            continue
+        sent.append(
+            {
+                "date": today,
+                "doi": article.doi,
+                "title": article.title,
+                "journal": article.journal,
+                "url": article.url,
+            }
+        )
+        existing.add(doi_key)
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(history, f, ensure_ascii=False, indent=2)
+        f.write("\n")
+
+
 def get_json(url: str, retries: int = 3) -> dict[str, Any]:
     last_error: Exception | None = None
     for attempt in range(retries):
@@ -143,10 +185,13 @@ def collect_candidates(config: dict[str, Any], days_back: int, rows_per_journal:
     return sorted(candidates, key=lambda c: (c.published, c.score), reverse=True)
 
 
-def select_articles(candidates: list[Candidate], limit: int) -> list[Candidate]:
+def select_articles(candidates: list[Candidate], limit: int, excluded_dois: set[str] | None = None) -> list[Candidate]:
     selected: list[Candidate] = []
     seen_titles: set[str] = set()
+    excluded = excluded_dois or set()
     for item in candidates:
+        if item.doi.lower() in excluded:
+            continue
         title_key = normalize(item.title)
         if title_key in seen_titles:
             continue
@@ -249,12 +294,15 @@ def main() -> int:
     parser.add_argument("--send", action="store_true", help="Send email via SMTP.")
     parser.add_argument("--days-back", type=int, default=int(os.environ.get("DIGEST_DAYS_BACK", "1095")))
     parser.add_argument("--limit", type=int, default=int(os.environ.get("DIGEST_MAX_ARTICLES", "2")))
-    parser.add_argument("--rows-per-journal", type=int, default=30)
+    parser.add_argument("--rows-per-journal", type=int, default=int(os.environ.get("DIGEST_ROWS_PER_JOURNAL", "100")))
+    parser.add_argument("--history", default="data/sent_history.json")
+    parser.add_argument("--update-history", action="store_true", help="Record successfully emailed DOIs.")
     args = parser.parse_args()
 
     config = load_config(args.config)
+    history = load_history(args.history)
     candidates = collect_candidates(config, args.days_back, args.rows_per_journal)
-    articles = select_articles(candidates, args.limit)
+    articles = select_articles(candidates, args.limit, history_dois(history))
     text_body = render_text(articles)
     html_body = render_html(articles)
 
@@ -262,6 +310,8 @@ def main() -> int:
     if args.send:
         subject = f"IEEE电子通信论文摘要链接 - {dt.date.today().isoformat()}"
         send_email(subject, text_body, html_body)
+        if args.update_history:
+            update_history(args.history, history, articles)
         print("\nEmail sent.")
     return 0
 
