@@ -22,6 +22,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from dataclasses import dataclass
+from zoneinfo import ZoneInfo
 from typing import Any
 
 
@@ -64,10 +65,46 @@ def history_dois(history: dict[str, Any]) -> set[str]:
     }
 
 
-def update_history(path: str, history: dict[str, Any], articles: list["Candidate"]) -> None:
+def history_digest_dates(history: dict[str, Any]) -> set[str]:
+    digest_dates = {
+        str(item.get("date", ""))
+        for item in history.get("digests", [])
+        if isinstance(item, dict) and item.get("date")
+    }
+    sent_dates = {
+        str(item.get("date", ""))
+        for item in history.get("sent", [])
+        if isinstance(item, dict) and item.get("date")
+    }
+    return digest_dates | sent_dates
+
+
+def local_now(timezone_name: str) -> dt.datetime:
+    return dt.datetime.now(ZoneInfo(timezone_name))
+
+
+def should_skip_for_daily_window(
+    history: dict[str, Any],
+    timezone_name: str,
+    not_before: str,
+    once_per_date: bool,
+) -> str | None:
+    now = local_now(timezone_name)
+    hour, minute = [int(part) for part in not_before.split(":", 1)]
+    earliest = now.replace(hour=hour, minute=minute, second=0, microsecond=0)
+    if now < earliest:
+        return f"Skip: local time {now:%Y-%m-%d %H:%M} is before {not_before} {timezone_name}."
+    if once_per_date and now.date().isoformat() in history_digest_dates(history):
+        return f"Skip: digest already sent for {now.date().isoformat()}."
+    return None
+
+
+def update_history(path: str, history: dict[str, Any], articles: list["Candidate"], timezone_name: str) -> None:
     sent = history.setdefault("sent", [])
+    digests = history.setdefault("digests", [])
     existing = history_dois(history)
-    today = dt.date.today().isoformat()
+    now = local_now(timezone_name)
+    today = now.date().isoformat()
     for article in articles:
         doi_key = article.doi.lower()
         if doi_key in existing:
@@ -82,6 +119,8 @@ def update_history(path: str, history: dict[str, Any], articles: list["Candidate
             }
         )
         existing.add(doi_key)
+    if today not in history_digest_dates(history):
+        digests.append({"date": today, "sent_at": now.isoformat(timespec="seconds")})
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
         json.dump(history, f, ensure_ascii=False, indent=2)
@@ -297,10 +336,23 @@ def main() -> int:
     parser.add_argument("--rows-per-journal", type=int, default=int(os.environ.get("DIGEST_ROWS_PER_JOURNAL", "100")))
     parser.add_argument("--history", default="data/sent_history.json")
     parser.add_argument("--update-history", action="store_true", help="Record successfully emailed DOIs.")
+    parser.add_argument("--timezone", default=os.environ.get("DIGEST_TIMEZONE", "Asia/Shanghai"))
+    parser.add_argument("--not-before", default=os.environ.get("DIGEST_NOT_BEFORE", "07:30"))
+    parser.add_argument("--once-per-local-date", action="store_true")
     args = parser.parse_args()
 
     config = load_config(args.config)
     history = load_history(args.history)
+    if args.once_per_local_date:
+        skip_reason = should_skip_for_daily_window(
+            history,
+            args.timezone,
+            args.not_before,
+            once_per_date=True,
+        )
+        if skip_reason:
+            print(skip_reason)
+            return 0
     candidates = collect_candidates(config, args.days_back, args.rows_per_journal)
     articles = select_articles(candidates, args.limit, history_dois(history))
     text_body = render_text(articles)
@@ -308,10 +360,10 @@ def main() -> int:
 
     print(text_body)
     if args.send:
-        subject = f"IEEE电子通信论文摘要链接 - {dt.date.today().isoformat()}"
+        subject = f"IEEE电子通信论文摘要链接 - {local_now(args.timezone).date().isoformat()}"
         send_email(subject, text_body, html_body)
         if args.update_history:
-            update_history(args.history, history, articles)
+            update_history(args.history, history, articles, args.timezone)
         print("\nEmail sent.")
     return 0
 
