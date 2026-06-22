@@ -108,6 +108,57 @@ class CollectCandidatesTests(unittest.TestCase):
         self.assertEqual("Fallback abstract from landing page.", candidates[0].abstract)
         fallback.assert_called_once_with("https://example.com/paper")
 
+    def test_collect_candidates_can_skip_expensive_abstract_resolution_until_after_selection(self):
+        config = {
+            "include_keywords": ["antenna"],
+            "exclude_keywords": [],
+            "journals": [
+                {
+                    "key": "TAP",
+                    "title": "IEEE Transactions on Antennas and Propagation",
+                    "issn": "0000-0000",
+                    "eissn": None,
+                    "metrics": {
+                        "system": "JCR-JIF",
+                        "year": 2024,
+                        "quartile": "Q1",
+                        "impact_factor": "5.8",
+                        "source": "IEEE Title List",
+                        "source_url": "https://example.com/metrics",
+                    },
+                }
+            ],
+        }
+        response = {
+            "message": {
+                "items": [
+                    {
+                        "title": ["Antenna Candidate One"],
+                        "DOI": "10.1109/tap.2026.1000001",
+                        "container-title": ["IEEE Transactions on Antennas and Propagation"],
+                        "published-online": {"date-parts": [[2026, 6, 1]]},
+                        "URL": "https://example.com/paper1",
+                        "author": [{"given": "Ada", "family": "Lovelace"}],
+                    }
+                ]
+            }
+        }
+
+        with patch.object(digest, "get_json", return_value=response), patch.object(
+            digest,
+            "resolve_abstract",
+            return_value="Should not be called.",
+        ) as resolver:
+            candidates = digest.collect_candidates(
+                config,
+                days_back=30,
+                rows_per_journal=10,
+                resolve_abstracts=False,
+            )
+
+        self.assertEqual("", candidates[0].abstract)
+        resolver.assert_not_called()
+
 
 class MetadataHelpersTests(unittest.TestCase):
     def test_extract_authors_formats_names(self):
@@ -174,6 +225,35 @@ class MetadataHelpersTests(unittest.TestCase):
             "Abstract from OpenAlex.",
             digest.abstract_from_inverted_index(inverted_index),
         )
+
+    def test_enrich_candidates_with_abstracts_updates_only_selected_articles(self):
+        candidates = [
+            digest.Candidate(
+                title="Paper One",
+                journal="IEEE Transactions on Antennas and Propagation",
+                journal_key="TAP",
+                doi="10.1109/tap.2026.1000001",
+                url="https://example.com/paper1",
+                published="2026-06-01",
+                metrics={
+                    "system": "JCR-JIF",
+                    "year": 2024,
+                    "quartile": "Q1",
+                    "impact_factor": "5.8",
+                    "source": "IEEE Title List",
+                    "source_url": "https://example.com/metrics",
+                },
+                score=2,
+                authors="Ada Lovelace",
+                abstract="",
+            )
+        ]
+
+        with patch.object(digest, "resolve_abstract", return_value="Resolved abstract.") as resolver:
+            enriched = digest.enrich_candidates_with_abstracts(candidates)
+
+        self.assertEqual("Resolved abstract.", enriched[0].abstract)
+        resolver.assert_called_once_with({}, "https://example.com/paper1", "10.1109/tap.2026.1000001")
 
 
 class RenderingTests(unittest.TestCase):

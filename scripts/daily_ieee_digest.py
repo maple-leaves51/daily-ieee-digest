@@ -337,7 +337,12 @@ def resolve_abstract(item: dict[str, Any], url: str, doi: str) -> str:
     return fetch_openalex_abstract(doi)
 
 
-def collect_candidates(config: dict[str, Any], days_back: int, rows_per_journal: int) -> list[Candidate]:
+def collect_candidates(
+    config: dict[str, Any],
+    days_back: int,
+    rows_per_journal: int,
+    resolve_abstracts: bool = True,
+) -> list[Candidate]:
     from_date = (dt.date.today() - dt.timedelta(days=days_back)).isoformat()
     include = config.get("include_keywords", [])
     exclude = config.get("exclude_keywords", [])
@@ -372,10 +377,35 @@ def collect_candidates(config: dict[str, Any], days_back: int, rows_per_journal:
                         metrics=journal["metrics"],
                         score=score,
                         authors=authors,
-                        abstract=resolve_abstract(item, item.get("URL") or f"https://doi.org/{doi}", doi),
+                        abstract=(
+                            resolve_abstract(item, item.get("URL") or f"https://doi.org/{doi}", doi)
+                            if resolve_abstracts
+                            else ""
+                        ),
                     )
                 )
     return sorted(candidates, key=lambda c: (c.published, c.score), reverse=True)
+
+
+def enrich_candidates_with_abstracts(candidates: list[Candidate]) -> list[Candidate]:
+    enriched: list[Candidate] = []
+    for candidate in candidates:
+        abstract = candidate.abstract or resolve_abstract({}, candidate.url, candidate.doi)
+        enriched.append(
+            Candidate(
+                title=candidate.title,
+                journal=candidate.journal,
+                journal_key=candidate.journal_key,
+                doi=candidate.doi,
+                url=candidate.url,
+                published=candidate.published,
+                metrics=candidate.metrics,
+                score=candidate.score,
+                authors=candidate.authors,
+                abstract=abstract,
+            )
+        )
+    return enriched
 
 
 def select_articles(candidates: list[Candidate], limit: int, excluded_dois: set[str] | None = None) -> list[Candidate]:
@@ -508,8 +538,14 @@ def main() -> int:
         if skip_reason:
             print(skip_reason)
             return 0
-    candidates = collect_candidates(config, args.days_back, args.rows_per_journal)
+    candidates = collect_candidates(
+        config,
+        args.days_back,
+        args.rows_per_journal,
+        resolve_abstracts=False,
+    )
     articles = select_articles(candidates, args.limit, history_dois(history))
+    articles = enrich_candidates_with_abstracts(articles)
     text_body = render_text(articles)
     html_body = render_html(articles)
 
