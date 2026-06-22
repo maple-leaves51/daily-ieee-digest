@@ -1,5 +1,12 @@
 # Daily IEEE Digest
 
+## 2026-06-22 behavior update
+
+- The digest now rejects obvious non-paper entries such as `Publication Information`, `Information for Authors`, editorials, errata, and similar front-matter titles.
+- A candidate must also have at least one author in Crossref metadata before it can be emailed.
+- Each email item now includes `Authors` and `Abstract` in both plain-text and HTML output.
+- Abstract resolution now tries Crossref first, then falls back to DOI or landing-page meta tags before marking the abstract as unavailable.
+
 Daily IEEE Digest 是一个基于 GitHub Actions 的论文邮件推送工具。它会在云端定时检索指定期刊的近年论文，按关键词筛选方向，生成摘要链接型邮件，并通过 SMTP 发送到指定邮箱。
 
 这个仓库当前示例配置用于每天推送 IEEE 电子、通信方向论文，优先检索：

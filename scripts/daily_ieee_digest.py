@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
-"""Build and optionally email a daily IEEE article digest.
-
-The script intentionally sends links to original abstract pages instead of
-copying complete abstracts.
-"""
+"""Build and optionally email a daily IEEE article digest."""
 
 from __future__ import annotations
 
@@ -13,21 +9,38 @@ import email.message
 import html
 import json
 import os
+import re
 import smtplib
 import ssl
 import sys
 import textwrap
 import time
+from html.parser import HTMLParser
 import urllib.error
 import urllib.parse
 import urllib.request
 from dataclasses import dataclass
-from zoneinfo import ZoneInfo
 from typing import Any
+from zoneinfo import ZoneInfo
 
 
 CROSSREF_API = "https://api.crossref.org/journals/{issn}/works"
+OPENALEX_WORKS_API = "https://api.openalex.org/works/{work_id}"
 USER_AGENT = "daily-ieee-digest/1.0 (mailto:maplesoda251796@163.com)"
+NON_ARTICLE_TITLE_PATTERNS = (
+    "publication information",
+    "information for authors",
+    "for authors",
+    "call for papers",
+    "editorial",
+    "guest editorial",
+    "erratum",
+    "correction to",
+    "corrections to",
+    "table of contents",
+    "about this issue",
+    "preface",
+)
 
 
 @dataclass(frozen=True)
@@ -40,6 +53,24 @@ class Candidate:
     published: str
     metrics: dict[str, Any]
     score: int
+    authors: str
+    abstract: str
+
+
+class MetaTagParser(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__()
+        self.meta_tags: list[dict[str, str]] = []
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag.lower() != "meta":
+            return
+        normalized: dict[str, str] = {}
+        for key, value in attrs:
+            if key and value is not None:
+                normalized[key.lower()] = value
+        if normalized:
+            self.meta_tags.append(normalized)
 
 
 def load_config(path: str) -> dict[str, Any]:
@@ -143,6 +174,23 @@ def get_json(url: str, retries: int = 3) -> dict[str, Any]:
     raise RuntimeError(f"Failed to fetch {url}: {last_error}")
 
 
+def get_text(url: str, retries: int = 3) -> str:
+    last_error: Exception | None = None
+    for attempt in range(retries):
+        req = urllib.request.Request(
+            url,
+            headers={"User-Agent": USER_AGENT, "Accept": "text/html,application/xhtml+xml"},
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                charset = resp.headers.get_content_charset() or "utf-8"
+                return resp.read().decode(charset, errors="replace")
+        except (urllib.error.URLError, TimeoutError, UnicodeDecodeError) as exc:
+            last_error = exc
+            time.sleep(2**attempt)
+    raise RuntimeError(f"Failed to fetch {url}: {last_error}")
+
+
 def first_text(value: Any) -> str:
     if isinstance(value, list) and value:
         return str(value[0]).strip()
@@ -155,15 +203,20 @@ def published_date(item: dict[str, Any]) -> str:
     for key in ("published-print", "published-online", "published"):
         parts = item.get(key, {}).get("date-parts", [])
         if parts and parts[0]:
-            vals = [str(v) for v in parts[0]]
-            while len(vals) < 3:
-                vals.append("01")
-            return "-".join(vals[:3])
+            values = [str(v) for v in parts[0]]
+            while len(values) < 3:
+                values.append("01")
+            return "-".join(values[:3])
     return "unknown"
 
 
 def normalize(text: str) -> str:
     return " ".join(text.lower().replace("-", " ").split())
+
+
+def is_likely_non_article_title(title: str) -> bool:
+    normalized = normalize(title)
+    return any(pattern in normalized for pattern in NON_ARTICLE_TITLE_PATTERNS)
 
 
 def topic_score(title: str, include: list[str], exclude: list[str]) -> int:
@@ -183,9 +236,105 @@ def crossref_url(issn: str, from_date: str, rows: int) -> str:
         "sort": "published",
         "order": "desc",
         "rows": str(rows),
-        "select": "DOI,title,container-title,published,published-online,published-print,URL",
+        "select": "DOI,title,container-title,published,published-online,published-print,URL,author,abstract",
     }
     return f"{CROSSREF_API.format(issn=urllib.parse.quote(issn))}?{urllib.parse.urlencode(params)}"
+
+
+def openalex_url(doi: str) -> str:
+    work_id = urllib.parse.quote(f"https://doi.org/{doi}", safe="")
+    return OPENALEX_WORKS_API.format(work_id=work_id)
+
+
+def extract_authors(item: dict[str, Any]) -> str:
+    authors: list[str] = []
+    for author in item.get("author", []):
+        if not isinstance(author, dict):
+            continue
+        given = str(author.get("given", "")).strip()
+        family = str(author.get("family", "")).strip()
+        name = str(author.get("name", "")).strip()
+        full_name = " ".join(part for part in (given, family) if part).strip()
+        if full_name:
+            authors.append(full_name)
+        elif name:
+            authors.append(name)
+        elif family:
+            authors.append(family)
+    return ", ".join(authors)
+
+
+def clean_abstract(raw_abstract: Any) -> str:
+    if not isinstance(raw_abstract, str):
+        return ""
+    text = html.unescape(raw_abstract)
+    text = re.sub(r"<[^>]+>", " ", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    text = re.sub(r"\s+([,.;:!?])", r"\1", text)
+    return text
+
+
+def extract_abstract_from_html(page_text: str) -> str:
+    parser = MetaTagParser()
+    parser.feed(page_text)
+    preferred_keys = (
+        ("name", "citation_abstract"),
+        ("property", "citation_abstract"),
+        ("name", "dc.description"),
+        ("property", "og:description"),
+        ("name", "description"),
+    )
+    for attr_name, attr_value in preferred_keys:
+        for meta in parser.meta_tags:
+            if meta.get(attr_name, "").lower() == attr_value:
+                content = meta.get("content", "").strip()
+                if content:
+                    return clean_abstract(content)
+    return ""
+
+
+def fetch_landing_page_abstract(url: str) -> str:
+    try:
+        return extract_abstract_from_html(get_text(url))
+    except RuntimeError:
+        return ""
+
+
+def abstract_from_inverted_index(inverted_index: Any) -> str:
+    if not isinstance(inverted_index, dict) or not inverted_index:
+        return ""
+    max_position = max(
+        (position for positions in inverted_index.values() if isinstance(positions, list) for position in positions),
+        default=-1,
+    )
+    if max_position < 0:
+        return ""
+    words: list[str] = [""] * (max_position + 1)
+    for word, positions in inverted_index.items():
+        if not isinstance(word, str) or not isinstance(positions, list):
+            continue
+        for position in positions:
+            if isinstance(position, int) and 0 <= position <= max_position:
+                words[position] = word
+    return clean_abstract(" ".join(word for word in words if word))
+
+
+def fetch_openalex_abstract(doi: str) -> str:
+    try:
+        data = get_json(openalex_url(doi))
+    except RuntimeError:
+        return ""
+    return abstract_from_inverted_index(data.get("abstract_inverted_index"))
+
+
+def resolve_abstract(item: dict[str, Any], url: str, doi: str) -> str:
+    abstract = clean_abstract(item.get("abstract"))
+    if abstract:
+        return abstract
+    abstract = fetch_landing_page_abstract(url)
+    if abstract:
+        return abstract
+    return fetch_openalex_abstract(doi)
 
 
 def collect_candidates(config: dict[str, Any], days_back: int, rows_per_journal: int) -> list[Candidate]:
@@ -197,7 +346,7 @@ def collect_candidates(config: dict[str, Any], days_back: int, rows_per_journal:
     for journal in config["journals"]:
         issns = [journal.get("issn"), journal.get("eissn")]
         seen_dois: set[str] = set()
-        for issn in [i for i in issns if i]:
+        for issn in [value for value in issns if value]:
             data = get_json(crossref_url(issn, from_date, rows_per_journal))
             for item in data.get("message", {}).get("items", []):
                 title = first_text(item.get("title"))
@@ -205,10 +354,13 @@ def collect_candidates(config: dict[str, Any], days_back: int, rows_per_journal:
                 if not title or not doi or doi.lower() in seen_dois:
                     continue
                 seen_dois.add(doi.lower())
-                journal_title = first_text(item.get("container-title")) or journal["title"]
+                authors = extract_authors(item)
+                if not authors or is_likely_non_article_title(title):
+                    continue
                 score = topic_score(title, include, exclude)
                 if score < 1:
                     continue
+                journal_title = first_text(item.get("container-title")) or journal["title"]
                 candidates.append(
                     Candidate(
                         title=title,
@@ -219,6 +371,8 @@ def collect_candidates(config: dict[str, Any], days_back: int, rows_per_journal:
                         published=published_date(item),
                         metrics=journal["metrics"],
                         score=score,
+                        authors=authors,
+                        abstract=resolve_abstract(item, item.get("URL") or f"https://doi.org/{doi}", doi),
                     )
                 )
     return sorted(candidates, key=lambda c: (c.published, c.score), reverse=True)
@@ -246,27 +400,27 @@ def render_text(articles: list[Candidate]) -> str:
     lines = [
         f"Daily IEEE Electronic and Communication Digest - {today}",
         "",
-        "完整原文摘要不在邮件中复制；请打开每篇文章的 DOI / IEEE Xplore / 来源链接查看。",
-        "",
     ]
     for idx, item in enumerate(articles, 1):
         metrics = item.metrics
+        abstract = item.abstract or "Abstract unavailable from metadata source."
         lines.extend(
             [
                 f"{idx}. {item.title}",
-                f"期刊: {item.journal} ({item.journal_key})",
-                f"发表/在线日期: {item.published}",
-                f"分区: {metrics['system']} {metrics['year']} {metrics['quartile']}",
-                f"影响因子: {metrics['impact_factor']} ({metrics['source']})",
-                f"影响因子/分区来源: {metrics['source_url']}",
+                f"Journal: {item.journal} ({item.journal_key})",
+                f"Authors: {item.authors}",
+                f"Published: {item.published}",
+                f"Quartile: {metrics['system']} {metrics['year']} {metrics['quartile']}",
+                f"Impact Factor: {metrics['impact_factor']} ({metrics['source']})",
+                f"Metrics Source: {metrics['source_url']}",
                 f"DOI: https://doi.org/{item.doi}",
-                f"摘要/文章直达链接: {item.url}",
-                "摘要说明: 因版权限制不复制完整原文摘要，请打开上方链接查看。",
+                f"Article Link: {item.url}",
+                f"Abstract: {abstract}",
                 "",
             ]
         )
     if not articles:
-        lines.append("未能找到满足条件且元数据可靠的文章。请检查网络或扩大检索范围。")
+        lines.append("No qualifying papers were found from the current metadata sources.")
     return "\n".join(lines)
 
 
@@ -274,29 +428,30 @@ def render_html(articles: list[Candidate]) -> str:
     today = dt.date.today().isoformat()
     blocks = [
         f"<h2>Daily IEEE Electronic and Communication Digest - {html.escape(today)}</h2>",
-        "<p>完整原文摘要不在邮件中复制；请打开每篇文章的 DOI / IEEE Xplore / 来源链接查看。</p>",
     ]
     for idx, item in enumerate(articles, 1):
         metrics = item.metrics
+        abstract = item.abstract or "Abstract unavailable from metadata source."
         blocks.append(
             textwrap.dedent(
                 f"""
                 <h3>{idx}. {html.escape(item.title)}</h3>
                 <ul>
-                  <li><b>期刊:</b> {html.escape(item.journal)} ({html.escape(item.journal_key)})</li>
-                  <li><b>发表/在线日期:</b> {html.escape(item.published)}</li>
-                  <li><b>分区:</b> {html.escape(metrics['system'])} {html.escape(str(metrics['year']))} {html.escape(metrics['quartile'])}</li>
-                  <li><b>影响因子:</b> {html.escape(metrics['impact_factor'])} ({html.escape(metrics['source'])})</li>
-                  <li><b>影响因子/分区来源:</b> <a href="{html.escape(metrics['source_url'])}">{html.escape(metrics['source_url'])}</a></li>
+                  <li><b>Journal:</b> {html.escape(item.journal)} ({html.escape(item.journal_key)})</li>
+                  <li><b>Authors:</b> {html.escape(item.authors)}</li>
+                  <li><b>Published:</b> {html.escape(item.published)}</li>
+                  <li><b>Quartile:</b> {html.escape(metrics['system'])} {html.escape(str(metrics['year']))} {html.escape(metrics['quartile'])}</li>
+                  <li><b>Impact Factor:</b> {html.escape(metrics['impact_factor'])} ({html.escape(metrics['source'])})</li>
+                  <li><b>Metrics Source:</b> <a href="{html.escape(metrics['source_url'])}">{html.escape(metrics['source_url'])}</a></li>
                   <li><b>DOI:</b> <a href="https://doi.org/{html.escape(item.doi)}">https://doi.org/{html.escape(item.doi)}</a></li>
-                  <li><b>摘要/文章直达链接:</b> <a href="{html.escape(item.url)}">{html.escape(item.url)}</a></li>
-                  <li><b>摘要说明:</b> 因版权限制不复制完整原文摘要，请打开上方链接查看。</li>
+                  <li><b>Article Link:</b> <a href="{html.escape(item.url)}">{html.escape(item.url)}</a></li>
+                  <li><b>Abstract:</b> {html.escape(abstract)}</li>
                 </ul>
                 """
             ).strip()
         )
     if not articles:
-        blocks.append("<p>未能找到满足条件且元数据可靠的文章。请检查网络或扩大检索范围。</p>")
+        blocks.append("<p>No qualifying papers were found from the current metadata sources.</p>")
     return "\n".join(blocks)
 
 
@@ -360,7 +515,7 @@ def main() -> int:
 
     print(text_body)
     if args.send:
-        subject = f"IEEE电子通信论文摘要链接 - {local_now(args.timezone).date().isoformat()}"
+        subject = f"IEEE电子通信论文摘要 - {local_now(args.timezone).date().isoformat()}"
         send_email(subject, text_body, html_body)
         if args.update_history:
             update_history(args.history, history, articles, args.timezone)
