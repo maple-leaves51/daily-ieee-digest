@@ -30,6 +30,9 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Sync sent history from main
+        run: curl -L https://raw.githubusercontent.com/maple-leaves51/daily-ieee-digest/master/data/sent_history.json -o data/sent_history.json
+
       - name: Send daily digest
         env:
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
@@ -43,7 +46,7 @@ jobs:
           DIGEST_ROWS_PER_JOURNAL: "100"
           DIGEST_TIMEZONE: "Asia/Shanghai"
           DIGEST_NOT_BEFORE: "07:30"
-        run: python scripts/daily_ieee_digest.py --config config/journals.json --send --update-history --once-per-local-date
+        run: python scripts/daily_ieee_digest.py --config config/journals.json --send --update-history
 
       - name: Commit sent history
         run: |

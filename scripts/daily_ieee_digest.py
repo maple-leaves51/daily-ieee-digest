@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
-"""Build and optionally email a daily IEEE article digest.
-
-The script intentionally sends links to original abstract pages instead of
-copying complete abstracts.
-"""
+"""Build and optionally email a daily IEEE article digest."""
 
 from __future__ import annotations
 
@@ -13,6 +9,7 @@ import email.message
 import html
 import json
 import os
+import re
 import smtplib
 import ssl
 import sys
@@ -22,12 +19,26 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from dataclasses import dataclass
-from zoneinfo import ZoneInfo
 from typing import Any
+from zoneinfo import ZoneInfo
 
 
 CROSSREF_API = "https://api.crossref.org/journals/{issn}/works"
 USER_AGENT = "daily-ieee-digest/1.0 (mailto:maplesoda251796@163.com)"
+NON_ARTICLE_TITLE_PATTERNS = (
+    "publication information",
+    "information for authors",
+    "for authors",
+    "call for papers",
+    "editorial",
+    "guest editorial",
+    "erratum",
+    "correction to",
+    "corrections to",
+    "table of contents",
+    "about this issue",
+    "preface",
+)
 
 
 @dataclass(frozen=True)
@@ -40,6 +51,8 @@ class Candidate:
     published: str
     metrics: dict[str, Any]
     score: int
+    authors: str
+    abstract: str
 
 
 def load_config(path: str) -> dict[str, Any]:
@@ -155,15 +168,20 @@ def published_date(item: dict[str, Any]) -> str:
     for key in ("published-print", "published-online", "published"):
         parts = item.get(key, {}).get("date-parts", [])
         if parts and parts[0]:
-            vals = [str(v) for v in parts[0]]
-            while len(vals) < 3:
-                vals.append("01")
-            return "-".join(vals[:3])
+            values = [str(v) for v in parts[0]]
+            while len(values) < 3:
+                values.append("01")
+            return "-".join(values[:3])
     return "unknown"
 
 
 def normalize(text: str) -> str:
     return " ".join(text.lower().replace("-", " ").split())
+
+
+def is_likely_non_article_title(title: str) -> bool:
+    normalized = normalize(title)
+    return any(pattern in normalized for pattern in NON_ARTICLE_TITLE_PATTERNS)
 
 
 def topic_score(title: str, include: list[str], exclude: list[str]) -> int:
@@ -183,9 +201,37 @@ def crossref_url(issn: str, from_date: str, rows: int) -> str:
         "sort": "published",
         "order": "desc",
         "rows": str(rows),
-        "select": "DOI,title,container-title,published,published-online,published-print,URL",
+        "select": "DOI,title,container-title,published,published-online,published-print,URL,author,abstract",
     }
     return f"{CROSSREF_API.format(issn=urllib.parse.quote(issn))}?{urllib.parse.urlencode(params)}"
+
+
+def extract_authors(item: dict[str, Any]) -> str:
+    authors: list[str] = []
+    for author in item.get("author", []):
+        if not isinstance(author, dict):
+            continue
+        given = str(author.get("given", "")).strip()
+        family = str(author.get("family", "")).strip()
+        name = str(author.get("name", "")).strip()
+        full_name = " ".join(part for part in (given, family) if part).strip()
+        if full_name:
+            authors.append(full_name)
+        elif name:
+            authors.append(name)
+        elif family:
+            authors.append(family)
+    return ", ".join(authors)
+
+
+def clean_abstract(raw_abstract: Any) -> str:
+    if not isinstance(raw_abstract, str):
+        return ""
+    text = html.unescape(raw_abstract)
+    text = re.sub(r"<[^>]+>", " ", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    text = re.sub(r"\s+([,.;:!?])", r"\1", text)
+    return text
 
 
 def collect_candidates(config: dict[str, Any], days_back: int, rows_per_journal: int) -> list[Candidate]:
@@ -197,7 +243,7 @@ def collect_candidates(config: dict[str, Any], days_back: int, rows_per_journal:
     for journal in config["journals"]:
         issns = [journal.get("issn"), journal.get("eissn")]
         seen_dois: set[str] = set()
-        for issn in [i for i in issns if i]:
+        for issn in [value for value in issns if value]:
             data = get_json(crossref_url(issn, from_date, rows_per_journal))
             for item in data.get("message", {}).get("items", []):
                 title = first_text(item.get("title"))
@@ -205,10 +251,13 @@ def collect_candidates(config: dict[str, Any], days_back: int, rows_per_journal:
                 if not title or not doi or doi.lower() in seen_dois:
                     continue
                 seen_dois.add(doi.lower())
-                journal_title = first_text(item.get("container-title")) or journal["title"]
+                authors = extract_authors(item)
+                if not authors or is_likely_non_article_title(title):
+                    continue
                 score = topic_score(title, include, exclude)
                 if score < 1:
                     continue
+                journal_title = first_text(item.get("container-title")) or journal["title"]
                 candidates.append(
                     Candidate(
                         title=title,
@@ -219,6 +268,8 @@ def collect_candidates(config: dict[str, Any], days_back: int, rows_per_journal:
                         published=published_date(item),
                         metrics=journal["metrics"],
                         score=score,
+                        authors=authors,
+                        abstract=clean_abstract(item.get("abstract")),
                     )
                 )
     return sorted(candidates, key=lambda c: (c.published, c.score), reverse=True)
@@ -246,27 +297,27 @@ def render_text(articles: list[Candidate]) -> str:
     lines = [
         f"Daily IEEE Electronic and Communication Digest - {today}",
         "",
-        "完整原文摘要不在邮件中复制；请打开每篇文章的 DOI / IEEE Xplore / 来源链接查看。",
-        "",
     ]
     for idx, item in enumerate(articles, 1):
         metrics = item.metrics
+        abstract = item.abstract or "Abstract unavailable from metadata source."
         lines.extend(
             [
                 f"{idx}. {item.title}",
-                f"期刊: {item.journal} ({item.journal_key})",
-                f"发表/在线日期: {item.published}",
-                f"分区: {metrics['system']} {metrics['year']} {metrics['quartile']}",
-                f"影响因子: {metrics['impact_factor']} ({metrics['source']})",
-                f"影响因子/分区来源: {metrics['source_url']}",
+                f"Journal: {item.journal} ({item.journal_key})",
+                f"Authors: {item.authors}",
+                f"Published: {item.published}",
+                f"Quartile: {metrics['system']} {metrics['year']} {metrics['quartile']}",
+                f"Impact Factor: {metrics['impact_factor']} ({metrics['source']})",
+                f"Metrics Source: {metrics['source_url']}",
                 f"DOI: https://doi.org/{item.doi}",
-                f"摘要/文章直达链接: {item.url}",
-                "摘要说明: 因版权限制不复制完整原文摘要，请打开上方链接查看。",
+                f"Article Link: {item.url}",
+                f"Abstract: {abstract}",
                 "",
             ]
         )
     if not articles:
-        lines.append("未能找到满足条件且元数据可靠的文章。请检查网络或扩大检索范围。")
+        lines.append("No qualifying papers were found from the current metadata sources.")
     return "\n".join(lines)
 
 
@@ -274,29 +325,30 @@ def render_html(articles: list[Candidate]) -> str:
     today = dt.date.today().isoformat()
     blocks = [
         f"<h2>Daily IEEE Electronic and Communication Digest - {html.escape(today)}</h2>",
-        "<p>完整原文摘要不在邮件中复制；请打开每篇文章的 DOI / IEEE Xplore / 来源链接查看。</p>",
     ]
     for idx, item in enumerate(articles, 1):
         metrics = item.metrics
+        abstract = item.abstract or "Abstract unavailable from metadata source."
         blocks.append(
             textwrap.dedent(
                 f"""
                 <h3>{idx}. {html.escape(item.title)}</h3>
                 <ul>
-                  <li><b>期刊:</b> {html.escape(item.journal)} ({html.escape(item.journal_key)})</li>
-                  <li><b>发表/在线日期:</b> {html.escape(item.published)}</li>
-                  <li><b>分区:</b> {html.escape(metrics['system'])} {html.escape(str(metrics['year']))} {html.escape(metrics['quartile'])}</li>
-                  <li><b>影响因子:</b> {html.escape(metrics['impact_factor'])} ({html.escape(metrics['source'])})</li>
-                  <li><b>影响因子/分区来源:</b> <a href="{html.escape(metrics['source_url'])}">{html.escape(metrics['source_url'])}</a></li>
+                  <li><b>Journal:</b> {html.escape(item.journal)} ({html.escape(item.journal_key)})</li>
+                  <li><b>Authors:</b> {html.escape(item.authors)}</li>
+                  <li><b>Published:</b> {html.escape(item.published)}</li>
+                  <li><b>Quartile:</b> {html.escape(metrics['system'])} {html.escape(str(metrics['year']))} {html.escape(metrics['quartile'])}</li>
+                  <li><b>Impact Factor:</b> {html.escape(metrics['impact_factor'])} ({html.escape(metrics['source'])})</li>
+                  <li><b>Metrics Source:</b> <a href="{html.escape(metrics['source_url'])}">{html.escape(metrics['source_url'])}</a></li>
                   <li><b>DOI:</b> <a href="https://doi.org/{html.escape(item.doi)}">https://doi.org/{html.escape(item.doi)}</a></li>
-                  <li><b>摘要/文章直达链接:</b> <a href="{html.escape(item.url)}">{html.escape(item.url)}</a></li>
-                  <li><b>摘要说明:</b> 因版权限制不复制完整原文摘要，请打开上方链接查看。</li>
+                  <li><b>Article Link:</b> <a href="{html.escape(item.url)}">{html.escape(item.url)}</a></li>
+                  <li><b>Abstract:</b> {html.escape(abstract)}</li>
                 </ul>
                 """
             ).strip()
         )
     if not articles:
-        blocks.append("<p>未能找到满足条件且元数据可靠的文章。请检查网络或扩大检索范围。</p>")
+        blocks.append("<p>No qualifying papers were found from the current metadata sources.</p>")
     return "\n".join(blocks)
 
 
@@ -360,7 +412,7 @@ def main() -> int:
 
     print(text_body)
     if args.send:
-        subject = f"IEEE电子通信论文摘要链接 - {local_now(args.timezone).date().isoformat()}"
+        subject = f"IEEE电子通信论文摘要 - {local_now(args.timezone).date().isoformat()}"
         send_email(subject, text_body, html_body)
         if args.update_history:
             update_history(args.history, history, articles, args.timezone)
