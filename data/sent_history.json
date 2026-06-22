@@ -195,6 +195,20 @@
       "title": "IEEE Transactions on Antennas and Propagation Information for Authors",
       "journal": "IEEE Transactions on Antennas and Propagation",
       "url": "https://doi.org/10.1109/tap.2026.3696883"
+    },
+    {
+      "date": "2026-06-22",
+      "doi": "10.1109/tap.2026.3671263",
+      "title": "Alternating Projections Method for Physically Realizable Tensor Impedance Synthesis of Metasurface Antennas",
+      "journal": "IEEE Transactions on Antennas and Propagation",
+      "url": "https://doi.org/10.1109/tap.2026.3671263"
+    },
+    {
+      "date": "2026-06-22",
+      "doi": "10.1109/tap.2026.3666105",
+      "title": "A Low-RCS Circular Polarization High-Gain Antenna Based on Metasurfaces",
+      "journal": "IEEE Transactions on Antennas and Propagation",
+      "url": "https://doi.org/10.1109/tap.2026.3666105"
     }
   ],
   "digests": []
