@@ -223,6 +223,20 @@
       "title": "The Analog of JK Flip-Flop Functions Through an Electromagnetic Logic Metastructure Based on Coherent Near-Perfect Absorption",
       "journal": "IEEE Transactions on Antennas and Propagation",
       "url": "https://doi.org/10.1109/tap.2026.3671383"
+    },
+    {
+      "date": "2026-06-24",
+      "doi": "10.1109/tmtt.2026.3681543",
+      "title": "Angle-of-Arrival Detection in Series-Fed Modular Hybrid Beamforming Arrays Exploiting the Analogy Between Frequency and Spatial Responses",
+      "journal": "IEEE Transactions on Microwave Theory and Techniques",
+      "url": "https://doi.org/10.1109/tmtt.2026.3681543"
+    },
+    {
+      "date": "2026-06-24",
+      "doi": "10.1109/tmtt.2026.3676976",
+      "title": "A Low-Complexity and Efficient Spatial Resampling Technique for Range–Angle Decoupling With 4-D High-Resolution MIMO FMCW Radar System",
+      "journal": "IEEE Transactions on Microwave Theory and Techniques",
+      "url": "https://doi.org/10.1109/tmtt.2026.3676976"
     }
   ],
   "digests": []
