@@ -237,6 +237,20 @@
       "title": "A Low-Complexity and Efficient Spatial Resampling Technique for Range–Angle Decoupling With 4-D High-Resolution MIMO FMCW Radar System",
       "journal": "IEEE Transactions on Microwave Theory and Techniques",
       "url": "https://doi.org/10.1109/tmtt.2026.3676976"
+    },
+    {
+      "date": "2026-06-25",
+      "doi": "10.1109/tap.2026.3681392",
+      "title": "A Wideband Full-Wave Magneto-Electric Dipole Antenna for High-Gain Millimeter-Wave Applications",
+      "journal": "IEEE Transactions on Antennas and Propagation",
+      "url": "https://doi.org/10.1109/tap.2026.3681392"
+    },
+    {
+      "date": "2026-06-25",
+      "doi": "10.1109/tap.2026.3670617",
+      "title": "Digitally Printed Chipless RFID Tags Operating at Millimeter-Wave Based on Higher-Order Mode",
+      "journal": "IEEE Transactions on Antennas and Propagation",
+      "url": "https://doi.org/10.1109/tap.2026.3670617"
     }
   ],
   "digests": []
