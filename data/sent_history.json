@@ -279,6 +279,20 @@
       "title": "Channel Estimation and Passive Beamforming for Pixel-Based Reconfigurable Intelligent Surfaces With Non-Separable State Response",
       "journal": "IEEE Transactions on Wireless Communications",
       "url": "https://doi.org/10.1109/twc.2026.3650846"
+    },
+    {
+      "date": "2026-06-28",
+      "doi": "10.1109/tmtt.2026.3674512",
+      "title": "On-Axis and On-Plane Tunable Focusing Metasurfaces for Wireless Power Transfer",
+      "journal": "IEEE Transactions on Microwave Theory and Techniques",
+      "url": "https://doi.org/10.1109/tmtt.2026.3674512"
+    },
+    {
+      "date": "2026-06-28",
+      "doi": "10.1109/tmtt.2026.3680218",
+      "title": "Inverse Design of Substrate-Parameterized Millimeter-Wave Filters for RF Chiplet Integration Assisted by Large Language Model",
+      "journal": "IEEE Transactions on Microwave Theory and Techniques",
+      "url": "https://doi.org/10.1109/tmtt.2026.3680218"
     }
   ],
   "digests": []
