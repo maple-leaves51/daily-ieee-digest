@@ -293,6 +293,20 @@
       "title": "Inverse Design of Substrate-Parameterized Millimeter-Wave Filters for RF Chiplet Integration Assisted by Large Language Model",
       "journal": "IEEE Transactions on Microwave Theory and Techniques",
       "url": "https://doi.org/10.1109/tmtt.2026.3680218"
+    },
+    {
+      "date": "2026-06-29",
+      "doi": "10.1109/twc.2026.3698358",
+      "title": "Performance Analysis for Rate Splitting Multiple Access Enhanced Pinching-Antenna Assisted Integrated Sensing and Communication Systems",
+      "journal": "IEEE Transactions on Wireless Communications",
+      "url": "https://doi.org/10.1109/twc.2026.3698358"
+    },
+    {
+      "date": "2026-06-29",
+      "doi": "10.1109/twc.2026.3652154",
+      "title": "RF-3DGS: Wireless Channel Modeling With Radio Radiance Field and 3D Gaussian Splatting",
+      "journal": "IEEE Transactions on Wireless Communications",
+      "url": "https://doi.org/10.1109/twc.2026.3652154"
     }
   ],
   "digests": []
