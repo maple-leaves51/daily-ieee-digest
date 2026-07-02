@@ -335,6 +335,20 @@
       "title": "Lorentzian-Constrained Holographic Beamforming Optimization in Multi-User Networks With Dynamic Metasurface Antennas",
       "journal": "IEEE Transactions on Wireless Communications",
       "url": "https://doi.org/10.1109/twc.2026.3651852"
+    },
+    {
+      "date": "2026-07-02",
+      "doi": "10.1109/tap.2026.3676054",
+      "title": "Electromagnetic Scattering of Uniformly Moving PEC Objects—Part I: Integral Equation Formulations",
+      "journal": "IEEE Transactions on Antennas and Propagation",
+      "url": "https://doi.org/10.1109/tap.2026.3676054"
+    },
+    {
+      "date": "2026-07-02",
+      "doi": "10.1109/tap.2026.3671375",
+      "title": "Radiation Efficiency and In Vivo Link Model of Implantable Antennas in Lossy Media",
+      "journal": "IEEE Transactions on Antennas and Propagation",
+      "url": "https://doi.org/10.1109/tap.2026.3671375"
     }
   ],
   "digests": []
