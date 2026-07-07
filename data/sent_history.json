@@ -405,6 +405,20 @@
       "title": "High-Efficiency Octa-Band Antenna for LTE/WWAN Unbroken-Metal-Frame Smartwatch Applications",
       "journal": "IEEE Transactions on Antennas and Propagation",
       "url": "https://doi.org/10.1109/tap.2026.3668269"
+    },
+    {
+      "date": "2026-07-07",
+      "doi": "10.1109/tap.2026.3666999",
+      "title": "Efficient Modeling of Quasi-Periodic Structures Using a Physics-Informed Deep Operator Network",
+      "journal": "IEEE Transactions on Antennas and Propagation",
+      "url": "https://doi.org/10.1109/tap.2026.3666999"
+    },
+    {
+      "date": "2026-07-07",
+      "doi": "10.1109/tap.2026.3671377",
+      "title": "Hybrid Framework for Efficient Design of Square-Loop Frequency-Selective Surfaces",
+      "journal": "IEEE Transactions on Antennas and Propagation",
+      "url": "https://doi.org/10.1109/tap.2026.3671377"
     }
   ],
   "digests": []
