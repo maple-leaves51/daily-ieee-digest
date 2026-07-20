@@ -99,6 +99,8 @@ Email sent.
 
 说明已经配置成功。
 
+另外，data/sent_history.json中记录了我目前已经阅读过的文献（用于去重），请在使用时自行删除
+
 ## What You Usually Need To Modify
 
 打开配置文件，替换成你想要的期刊，设置想要的、排除的关键词：
