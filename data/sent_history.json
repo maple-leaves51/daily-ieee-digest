@@ -601,6 +601,20 @@
       "title": "Pilot Resource Management for Channel Estimation Error Reduction in Digital Twin-Assisted User-Centric Cell-Free Massive MIMO Networks",
       "journal": "IEEE Transactions on Wireless Communications",
       "url": "https://doi.org/10.1109/twc.2026.3660875"
+    },
+    {
+      "date": "2026-07-20",
+      "doi": "10.1109/twc.2026.3691752",
+      "title": "Spatially Consistent RIS-Aided Multi-User Communications: Channel Modeling and Analysis",
+      "journal": "IEEE Transactions on Wireless Communications",
+      "url": "https://doi.org/10.1109/twc.2026.3691752"
+    },
+    {
+      "date": "2026-07-20",
+      "doi": "10.1109/twc.2025.3596953",
+      "title": "Joint Communication and Computation for Federated Learning Over Cell-Free MIMO Network",
+      "journal": "IEEE Transactions on Wireless Communications",
+      "url": "https://doi.org/10.1109/twc.2025.3596953"
     }
   ],
   "digests": []
