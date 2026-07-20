@@ -537,11 +537,16 @@ def main() -> int:
     parser.add_argument("--timezone", default=os.environ.get("DIGEST_TIMEZONE", "Asia/Shanghai"))
     parser.add_argument("--not-before", default=os.environ.get("DIGEST_NOT_BEFORE", "07:30"))
     parser.add_argument("--once-per-local-date", action="store_true")
+    parser.add_argument(
+        "--force-send",
+        action="store_true",
+        help="Bypass the once-per-local-date guard for manual delivery tests.",
+    )
     args = parser.parse_args()
 
     config = load_config(args.config)
     history = load_history(args.history)
-    if args.once_per_local_date:
+    if args.once_per_local_date and not args.force_send:
         skip_reason = should_skip_for_daily_window(
             history,
             args.timezone,
