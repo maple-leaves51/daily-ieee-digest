@@ -629,6 +629,20 @@
       "title": "Fully Metallic Slant-Polarized Linear Antenna Array With Two-Way Elliptical Curvatures",
       "journal": "IEEE Transactions on Antennas and Propagation",
       "url": "https://doi.org/10.1109/tap.2026.3687582"
+    },
+    {
+      "date": "2026-07-22",
+      "doi": "10.1109/twc.2026.3668904",
+      "title": "Cell-Free Massive MIMO-Assisted SWIPT Using Stacked Intelligent Metasurfaces",
+      "journal": "IEEE Transactions on Wireless Communications",
+      "url": "https://doi.org/10.1109/twc.2026.3668904"
+    },
+    {
+      "date": "2026-07-22",
+      "doi": "10.1109/twc.2025.3621437",
+      "title": "Coordinated Beamforming for Multi-Cell ISAC Using Graph Neural Networks",
+      "journal": "IEEE Transactions on Wireless Communications",
+      "url": "https://doi.org/10.1109/twc.2025.3621437"
     }
   ],
   "digests": []
