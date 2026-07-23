@@ -441,7 +441,7 @@ def select_articles(candidates: list[Candidate], limit: int, excluded_dois: set[
 def render_text(articles: list[Candidate]) -> str:
     today = dt.date.today().isoformat()
     lines = [
-        f"Daily IEEE Electronic and Communication Digest - {today}",
+        f"Daily IEEE Control, Industrial Electronics, and Robotics Digest - {today}",
         "",
     ]
     for idx, item in enumerate(articles, 1):
@@ -470,7 +470,7 @@ def render_text(articles: list[Candidate]) -> str:
 def render_html(articles: list[Candidate]) -> str:
     today = dt.date.today().isoformat()
     blocks = [
-        f"<h2>Daily IEEE Electronic and Communication Digest - {html.escape(today)}</h2>",
+        f"<h2>Daily IEEE Control, Industrial Electronics, and Robotics Digest - {html.escape(today)}</h2>",
     ]
     for idx, item in enumerate(articles, 1):
         metrics = item.metrics

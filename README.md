@@ -4,11 +4,13 @@
 
 每天自动筛选几篇我关心方向的新论文，整理成一封短邮件发到邮箱里，这样不用反复手动刷 IEEE Xplore、Crossref 或期刊主页。
 相信会有人有每天读两篇论文摘要的需求。
-当前仓库的默认配置，面向 IEEE 电子与通信相关方向，固定跟踪下面 3 本期刊：
+当前仓库的默认配置，面向 IEEE 自动控制、工业电子与机器人方向，固定跟踪下面 3 本期刊：
 
-- IEEE Transactions on Wireless Communications (`TWC`)
-- IEEE Transactions on Antennas and Propagation (`TAP`)
-- IEEE Transactions on Microwave Theory and Techniques (`TMTT`)
+- IEEE Transactions on Automatic Control (`TAC`)
+- IEEE Transactions on Industrial Electronics (`TIE`)
+- IEEE Transactions on Robotics (`T-RO`)
+
+说明：`IEEE Transactions on Robotics and Automation` 已于 2004 年停刊，并拆分为 `IEEE Transactions on Robotics` 和 `IEEE Transactions on Automation Science and Engineering`。为了能检索近 3 年论文，当前配置使用其现行机器人方向继承期刊 `IEEE Transactions on Robotics`。
 
 脚本会从这些期刊里检索候选论文，再按关键词筛选，最后每天发送少量结果到邮箱。
 
@@ -25,7 +27,7 @@
 当前仓库默认行为如下：
 
 - 每天发送 `2` 篇论文
-- 关注电子、通信、天线、微波、雷达等方向
+- 关注自动控制、工业电子、机器人、运动规划、状态估计、电力电子与伺服驱动等方向
 - 默认运行在 GitHub Actions 上、自动去重、自动补摘要
 
 摘要获取顺序是：
@@ -119,13 +121,14 @@ Email sent.
 
 ```json
 "include_keywords": [
-  "antenna",
-  "beamforming",
-  "communication",
-  "mimo",
-  "microwave",
-  "radar",
-  "wireless"
+  "adaptive control",
+  "automation",
+  "control",
+  "industrial electronics",
+  "model predictive control",
+  "power electronics",
+  "robotics",
+  "stability"
 ]
 ```
 
@@ -133,11 +136,14 @@ Email sent.
 
 ```json
 "exclude_keywords": [
-  "bio",
   "chemical",
+  "metamaterial",
+  "microwave",
+  "millimeter-wave",
   "materials",
-  "polymer",
-  "thin film"
+  "rf",
+  "terahertz",
+  "wireless communication"
 ]
 ```
 
