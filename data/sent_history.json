@@ -657,6 +657,20 @@
       "title": "A Secure Affine Frequency Division Multiplexing System for Next-Generation Wireless Communications",
       "journal": "IEEE Transactions on Wireless Communications",
       "url": "https://doi.org/10.1109/twc.2026.3693229"
+    },
+    {
+      "date": "2026-07-23",
+      "doi": "10.1109/tac.2026.3662309",
+      "title": "Model Predictive Control for Tracking Bounded References With Arbitrary Dynamics",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3662309"
+    },
+    {
+      "date": "2026-07-23",
+      "doi": "10.1109/tac.2026.3662306",
+      "title": "Maximizing Markov Trajectory Entropy Under Kemeny Constraints for Robotic Surveillance",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3662306"
     }
   ],
   "digests": []
