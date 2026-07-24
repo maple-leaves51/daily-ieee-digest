@@ -671,6 +671,20 @@
       "title": "Maximizing Markov Trajectory Entropy Under Kemeny Constraints for Robotic Surveillance",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3662306"
+    },
+    {
+      "date": "2026-07-24",
+      "doi": "10.1109/tie.2026.3663766",
+      "title": "Hierarchical Image-Based Visual-Servoing Control for Stewart Manipulators via Data-Driven Adaptation and Incremental Prediction",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3663766"
+    },
+    {
+      "date": "2026-07-24",
+      "doi": "10.1109/tie.2026.3672815",
+      "title": "Nonlinear Continuous Sliding Mode Predictive Control for Finite-Time Trajectory Tracking of Constrained AUV under Uncertainties",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3672815"
     }
   ],
   "digests": []
