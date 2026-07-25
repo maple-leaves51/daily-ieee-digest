@@ -685,6 +685,20 @@
       "title": "Nonlinear Continuous Sliding Mode Predictive Control for Finite-Time Trajectory Tracking of Constrained AUV under Uncertainties",
       "journal": "IEEE Transactions on Industrial Electronics",
       "url": "https://doi.org/10.1109/tie.2026.3672815"
+    },
+    {
+      "date": "2026-07-25",
+      "doi": "10.1109/tro.2026.3675526",
+      "title": "Hierarchical Multimodal Motion Control of Magnetic Pivot-Walking Millirobotic-Grippers for Autonomous Target Acquisition in Complex Terrains",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3675526"
+    },
+    {
+      "date": "2026-07-25",
+      "doi": "10.1109/tro.2025.3641751",
+      "title": "A Cable-Driven Soft Robotic Hand With an In-Hand RGB-D Camera for Dexterous Grasping and Manipulation",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2025.3641751"
     }
   ],
   "digests": []
