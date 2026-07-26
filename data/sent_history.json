@@ -699,6 +699,20 @@
       "title": "A Cable-Driven Soft Robotic Hand With an In-Hand RGB-D Camera for Dexterous Grasping and Manipulation",
       "journal": "IEEE Transactions on Robotics",
       "url": "https://doi.org/10.1109/tro.2025.3641751"
+    },
+    {
+      "date": "2026-07-26",
+      "doi": "10.1109/tac.2026.3657276",
+      "title": "$\\mathsf {QuITO}$ $\\mathsf {v.2}$: Numerical Solutions With Uniform Error Guarantees to Optimal Control Problems Under Path Constraints",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3657276"
+    },
+    {
+      "date": "2026-07-26",
+      "doi": "10.1109/tac.2026.3663089",
+      "title": "Stochastic Data-Driven Predictive Control With Equivalence to Stochastic MPC",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3663089"
     }
   ],
   "digests": []
