@@ -713,6 +713,20 @@
       "title": "Stochastic Data-Driven Predictive Control With Equivalence to Stochastic MPC",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3663089"
+    },
+    {
+      "date": "2026-07-27",
+      "doi": "10.1109/tie.2026.3670291",
+      "title": "Finite-Time Disturbance Observer-Based Adaptive Second-Order Sliding Mode Control for Parallel Connected DC–DC Buck Converters With Nonideal Switches",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3670291"
+    },
+    {
+      "date": "2026-07-27",
+      "doi": "10.1109/tie.2026.3677705",
+      "title": "Second-Order Disturbance-Observer-Based Output-Feedback Voltage Control of DC/DC Converters Using Pole-Zero Cancellation",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3677705"
     }
   ],
   "digests": []
