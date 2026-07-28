@@ -727,6 +727,20 @@
       "title": "Second-Order Disturbance-Observer-Based Output-Feedback Voltage Control of DC/DC Converters Using Pole-Zero Cancellation",
       "journal": "IEEE Transactions on Industrial Electronics",
       "url": "https://doi.org/10.1109/tie.2026.3677705"
+    },
+    {
+      "date": "2026-07-28",
+      "doi": "10.1109/tie.2026.3675068",
+      "title": "A Hybrid Robust Time-Delay Control Framework With Integrated Disturbance Observer and Adaptive Sliding Mode Control for Robot Manipulators",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3675068"
+    },
+    {
+      "date": "2026-07-28",
+      "doi": "10.1109/tie.2026.3675206",
+      "title": "State-Space Based Digital Twin of Single-Stage PV Inverter With Predictive Control for Real-Time Stability Monitoring",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3675206"
     }
   ],
   "digests": []
