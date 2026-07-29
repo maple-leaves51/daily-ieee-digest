@@ -741,6 +741,20 @@
       "title": "State-Space Based Digital Twin of Single-Stage PV Inverter With Predictive Control for Real-Time Stability Monitoring",
       "journal": "IEEE Transactions on Industrial Electronics",
       "url": "https://doi.org/10.1109/tie.2026.3675206"
+    },
+    {
+      "date": "2026-07-29",
+      "doi": "10.1109/tac.2026.3654318",
+      "title": "State and Input Constrained Model Reference Adaptive Control With Robustness and Feasibility Analysis",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3654318"
+    },
+    {
+      "date": "2026-07-29",
+      "doi": "10.1109/tac.2026.3656105",
+      "title": "Robust Adaptive Learning Control for a Class of Nonaffine Nonlinear Systems",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3656105"
     }
   ],
   "digests": []
