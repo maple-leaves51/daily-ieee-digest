@@ -755,6 +755,20 @@
       "title": "Robust Adaptive Learning Control for a Class of Nonaffine Nonlinear Systems",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3656105"
+    },
+    {
+      "date": "2026-07-30",
+      "doi": "10.1109/tac.2026.3666695",
+      "title": "Dual Representations and $H_{\\infty }$-Optimal Control of Partial Differential Equations",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3666695"
+    },
+    {
+      "date": "2026-07-30",
+      "doi": "10.1109/tac.2026.3674015",
+      "title": "Model Predictive Control of Hybrid Dynamical Systems",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3674015"
     }
   ],
   "digests": []
