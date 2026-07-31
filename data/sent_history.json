@@ -769,6 +769,20 @@
       "title": "Model Predictive Control of Hybrid Dynamical Systems",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3674015"
+    },
+    {
+      "date": "2026-07-31",
+      "doi": "10.1109/tac.2026.3667084",
+      "title": "Data-Driven Control of T-Product-Based Dynamical Systems",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3667084"
+    },
+    {
+      "date": "2026-07-31",
+      "doi": "10.1109/tac.2026.3674420",
+      "title": "Least-Squares Model-Reference Adaptive Control: Extension to Higher Relative Degree Plants",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3674420"
     }
   ],
   "digests": []
