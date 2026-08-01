@@ -783,6 +783,20 @@
       "title": "Least-Squares Model-Reference Adaptive Control: Extension to Higher Relative Degree Plants",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3674420"
+    },
+    {
+      "date": "2026-08-01",
+      "doi": "10.1109/tac.2026.3675544",
+      "title": "Benign Nonconvex Landscapes in Optimal and Robust Control, Part I: Global Optimality",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3675544"
+    },
+    {
+      "date": "2026-08-01",
+      "doi": "10.1109/tac.2026.3666701",
+      "title": "Distributed Source Seeking With Global Field Exploration Using Adaptive Model Predictive Control",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3666701"
     }
   ],
   "digests": []
