@@ -797,6 +797,20 @@
       "title": "Distributed Source Seeking With Global Field Exploration Using Adaptive Model Predictive Control",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3666701"
+    },
+    {
+      "date": "2026-08-02",
+      "doi": "10.1109/tro.2026.3686278",
+      "title": "Complete Autonomous Robotic Nasopharyngeal Swab System With Evaluation on a Stochastically Moving Phantom Head",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3686278"
+    },
+    {
+      "date": "2026-08-02",
+      "doi": "10.1109/tro.2026.3688064",
+      "title": "Model-Free Magnetic Servoing for Pose Control of Capsule Robots",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3688064"
     }
   ],
   "digests": []
