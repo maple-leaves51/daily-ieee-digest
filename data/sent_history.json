@@ -811,6 +811,20 @@
       "title": "Model-Free Magnetic Servoing for Pose Control of Capsule Robots",
       "journal": "IEEE Transactions on Robotics",
       "url": "https://doi.org/10.1109/tro.2026.3688064"
+    },
+    {
+      "date": "2026-08-03",
+      "doi": "10.1109/tro.2026.3714645",
+      "title": "Holistic Fusion: Task- and Setup-Agnostic Robot Localization and State Estimation With Factor Graphs",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3714645"
+    },
+    {
+      "date": "2026-08-03",
+      "doi": "10.1109/tro.2025.3645962",
+      "title": "A Multifingered Robotic Hand With Fiber-Optic Force and Tactile Sensing for Remote Manipulation",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2025.3645962"
     }
   ],
   "digests": []
