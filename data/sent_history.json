@@ -825,6 +825,20 @@
       "title": "A Multifingered Robotic Hand With Fiber-Optic Force and Tactile Sensing for Remote Manipulation",
       "journal": "IEEE Transactions on Robotics",
       "url": "https://doi.org/10.1109/tro.2025.3645962"
+    },
+    {
+      "date": "2026-08-04",
+      "doi": "10.1109/tro.2026.3701576",
+      "title": "Cross-Behavior Learning With Object Flow Prediction for Robotic Manipulation",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3701576"
+    },
+    {
+      "date": "2026-08-04",
+      "doi": "10.1109/tro.2026.3653859",
+      "title": "Strain-Based Shape and 3-D Force Estimation for Rod-Driven Continuum Robots With Stretch Sensors",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3653859"
     }
   ],
   "digests": []
