@@ -839,6 +839,20 @@
       "title": "Strain-Based Shape and 3-D Force Estimation for Rod-Driven Continuum Robots With Stretch Sensors",
       "journal": "IEEE Transactions on Robotics",
       "url": "https://doi.org/10.1109/tro.2026.3653859"
+    },
+    {
+      "date": "2026-08-05",
+      "doi": "10.1109/tie.2026.3677688",
+      "title": "Sensorless Control of LC-Filtered PMSM Drives Using an Easy-Tuning Full-Order Flux Observer",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3677688"
+    },
+    {
+      "date": "2026-08-05",
+      "doi": "10.1109/tie.2026.3677702",
+      "title": "Sensorless Sequential Model Predictive Direct Speed Control for Induction Motor Drives",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3677702"
     }
   ],
   "digests": []
