@@ -853,6 +853,20 @@
       "title": "Sensorless Sequential Model Predictive Direct Speed Control for Induction Motor Drives",
       "journal": "IEEE Transactions on Industrial Electronics",
       "url": "https://doi.org/10.1109/tie.2026.3677702"
+    },
+    {
+      "date": "2026-08-06",
+      "doi": "10.1109/tac.2026.3669444",
+      "title": "Hierarchical Adaptive Formation Tracking Control With Uncertain Time-Varying Exosystem",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3669444"
+    },
+    {
+      "date": "2026-08-06",
+      "doi": "10.1109/tac.2026.3669442",
+      "title": "Global Adaptive Control of Nonlinear Systems With Parametric Uncertainties and Time Delays via Time-Varying Gain Feedback Approach",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3669442"
     }
   ],
   "digests": []
