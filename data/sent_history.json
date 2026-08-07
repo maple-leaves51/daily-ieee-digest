@@ -867,6 +867,20 @@
       "title": "Global Adaptive Control of Nonlinear Systems With Parametric Uncertainties and Time Delays via Time-Varying Gain Feedback Approach",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3669442"
+    },
+    {
+      "date": "2026-08-07",
+      "doi": "10.1109/tac.2026.3675545",
+      "title": "Benign Nonconvex Landscapes in Optimal and Robust Control, Part II: Extended Convex Lifting",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3675545"
+    },
+    {
+      "date": "2026-08-07",
+      "doi": "10.1109/tac.2026.3676316",
+      "title": "Data-Driven Control of Large-Scale Networks With Formal Guarantees: A Small-Gain-Free Approach",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3676316"
     }
   ],
   "digests": []
