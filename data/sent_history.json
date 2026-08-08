@@ -895,6 +895,20 @@
       "title": "MobileROS: A Wireless-Native Robot Operating System for Mobile Robotics",
       "journal": "IEEE Transactions on Robotics",
       "url": "https://doi.org/10.1109/tro.2026.3701579"
+    },
+    {
+      "date": "2026-08-09",
+      "doi": "10.1109/tro.2026.3658211",
+      "title": "Learning From Videos Through Graph-to-Graphs Generative Modeling for Robotic Manipulation",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3658211"
+    },
+    {
+      "date": "2026-08-09",
+      "doi": "10.1109/tro.2026.3661718",
+      "title": "A Single Hydraulic Bellows-Based MRI-Safe Robotic Needle Driver Capable of Independent and Coupled Needle Translation and Rotation",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3661718"
     }
   ],
   "digests": []
