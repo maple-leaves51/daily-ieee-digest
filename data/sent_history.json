@@ -909,6 +909,20 @@
       "title": "A Single Hydraulic Bellows-Based MRI-Safe Robotic Needle Driver Capable of Independent and Coupled Needle Translation and Rotation",
       "journal": "IEEE Transactions on Robotics",
       "url": "https://doi.org/10.1109/tro.2026.3661718"
+    },
+    {
+      "date": "2026-08-10",
+      "doi": "10.1109/tro.2026.3658292",
+      "title": "FilMBot: A High-Speed Soft Parallel Robotic Micromanipulator",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3658292"
+    },
+    {
+      "date": "2026-08-10",
+      "doi": "10.1109/tro.2026.3721669",
+      "title": "Residual MPC: Blending Reinforcement Learning with GPU-Parallelized Model Predictive Control",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3721669"
     }
   ],
   "digests": []
