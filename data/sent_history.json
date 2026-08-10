@@ -923,6 +923,20 @@
       "title": "Residual MPC: Blending Reinforcement Learning with GPU-Parallelized Model Predictive Control",
       "journal": "IEEE Transactions on Robotics",
       "url": "https://doi.org/10.1109/tro.2026.3721669"
+    },
+    {
+      "date": "2026-08-11",
+      "doi": "10.1109/tro.2026.3653783",
+      "title": "Physics-Informed Token Prediction-Based Dynamic Modeling and High-Speed Feedforward Tracking Control of Dielectric Elastomer Actuators",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3653783"
+    },
+    {
+      "date": "2026-08-11",
+      "doi": "10.1109/tro.2026.3714647",
+      "title": "Lazy-DaSH: A Lazy Approach for Hypergraph-Based Multi-Robot Task and Motion Planning",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3714647"
     }
   ],
   "digests": []
