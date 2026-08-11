@@ -937,6 +937,20 @@
       "title": "Lazy-DaSH: A Lazy Approach for Hypergraph-Based Multi-Robot Task and Motion Planning",
       "journal": "IEEE Transactions on Robotics",
       "url": "https://doi.org/10.1109/tro.2026.3714647"
+    },
+    {
+      "date": "2026-08-12",
+      "doi": "10.1109/tie.2026.3677646",
+      "title": "Phenomenological Modeling and Tracking Control for Photothermal-Driven Liquid Crystal Elastomer Actuator Without Temperature Measurement",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3677646"
+    },
+    {
+      "date": "2026-08-12",
+      "doi": "10.1109/tie.2026.3675121",
+      "title": "Nonsmooth Sensorless Control for Distributed Dual In-Wheel PM Motors Coordination Drive System",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3675121"
     }
   ],
   "digests": []
