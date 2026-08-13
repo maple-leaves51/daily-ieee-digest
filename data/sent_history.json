@@ -965,6 +965,20 @@
       "title": "Adaptive Shared Autonomy With Haptic Feedback for Multi-DoF Robot Swarm Control",
       "journal": "IEEE Transactions on Robotics",
       "url": "https://doi.org/10.1109/tro.2026.3712459"
+    },
+    {
+      "date": "2026-08-14",
+      "doi": "10.1109/tac.2026.3670759",
+      "title": "Cooperative Adaptive Mechanisms for Robust Distributed Control of Multiagent Systems",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3670759"
+    },
+    {
+      "date": "2026-08-14",
+      "doi": "10.1109/tac.2026.3672354",
+      "title": "Remote State Estimation Under Stochastic Stealthy Attacks: Short-Term Optimization and Long-Term Convergence Analysis",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3672354"
     }
   ],
   "digests": []
