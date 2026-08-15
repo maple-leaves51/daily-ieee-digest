@@ -979,6 +979,20 @@
       "title": "Remote State Estimation Under Stochastic Stealthy Attacks: Short-Term Optimization and Long-Term Convergence Analysis",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3672354"
+    },
+    {
+      "date": "2026-08-15",
+      "doi": "10.1109/tie.2026.3675076",
+      "title": "An Improved Current Sharing Control Strategy of IPOP-DAB Converter Based on Continuous Perturbation Estimation Method (CPEM)",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3675076"
+    },
+    {
+      "date": "2026-08-15",
+      "doi": "10.1109/tie.2026.3675224",
+      "title": "Enhanced Robustness of Grid-Connected Inverters Using Data-Driven Predictive Control With High-Order Model-Free Adaptive Iterative Learning",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3675224"
     }
   ],
   "digests": []
