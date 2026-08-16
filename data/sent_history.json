@@ -993,6 +993,20 @@
       "title": "Enhanced Robustness of Grid-Connected Inverters Using Data-Driven Predictive Control With High-Order Model-Free Adaptive Iterative Learning",
       "journal": "IEEE Transactions on Industrial Electronics",
       "url": "https://doi.org/10.1109/tie.2026.3675224"
+    },
+    {
+      "date": "2026-08-16",
+      "doi": "10.1109/tro.2026.3710412",
+      "title": "Generative Adversarial Self-Imitation Learning With Large Language Model Feedback for Robot Control and Navigation",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3710412"
+    },
+    {
+      "date": "2026-08-16",
+      "doi": "10.1109/tro.2025.3626647",
+      "title": "RAID-AgiVS: A Bioinspired Reciprocal Perceptual Control Framework for Agile Visual Servo",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2025.3626647"
     }
   ],
   "digests": []
