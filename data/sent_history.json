@@ -1007,6 +1007,20 @@
       "title": "RAID-AgiVS: A Bioinspired Reciprocal Perceptual Control Framework for Agile Visual Servo",
       "journal": "IEEE Transactions on Robotics",
       "url": "https://doi.org/10.1109/tro.2025.3626647"
+    },
+    {
+      "date": "2026-08-17",
+      "doi": "10.1109/tie.2026.3672773",
+      "title": "Virtual Vector-Based DTC of Dual Inverter-Fed Asymmetrical Six-Phase Induction Motor Drive Supplied From a Single DC Source",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3672773"
+    },
+    {
+      "date": "2026-08-17",
+      "doi": "10.1109/tie.2026.3672787",
+      "title": "Open-Circuit Fault Diagnosis for Power Converters Under Variable Operational Conditions: From a Source-Free Domain Adaptation Perspective",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3672787"
     }
   ],
   "digests": []
