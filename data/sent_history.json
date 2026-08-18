@@ -1021,6 +1021,20 @@
       "title": "Open-Circuit Fault Diagnosis for Power Converters Under Variable Operational Conditions: From a Source-Free Domain Adaptation Perspective",
       "journal": "IEEE Transactions on Industrial Electronics",
       "url": "https://doi.org/10.1109/tie.2026.3672787"
+    },
+    {
+      "date": "2026-08-18",
+      "doi": "10.1109/tac.2026.3662304",
+      "title": "Completely Distributed Joint State–Unknown Input Estimation via Interval Observer",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3662304"
+    },
+    {
+      "date": "2026-08-18",
+      "doi": "10.1109/tac.2026.3673082",
+      "title": "Moving-Horizon Estimation for Multisensor Systems Under Probabilistic Caching Mechanism: A Co-Design Scheme",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3673082"
     }
   ],
   "digests": []
