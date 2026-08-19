@@ -1035,6 +1035,20 @@
       "title": "Moving-Horizon Estimation for Multisensor Systems Under Probabilistic Caching Mechanism: A Co-Design Scheme",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3673082"
+    },
+    {
+      "date": "2026-08-19",
+      "doi": "10.1109/tac.2026.3674040",
+      "title": "Ring-Patterned Control for Hyperexponential Consensus of Multiagent Systems With Increasing Scales",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3674040"
+    },
+    {
+      "date": "2026-08-19",
+      "doi": "10.1109/tac.2026.3666700",
+      "title": "On Informative State Vectors for Discrete Dynamic Estimation in Switched Systems Using the Model-Based Minimum Distance Method",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3666700"
     }
   ],
   "digests": []
