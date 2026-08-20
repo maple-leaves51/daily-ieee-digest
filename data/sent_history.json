@@ -1049,6 +1049,20 @@
       "title": "On Informative State Vectors for Discrete Dynamic Estimation in Switched Systems Using the Model-Based Minimum Distance Method",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3666700"
+    },
+    {
+      "date": "2026-08-20",
+      "doi": "10.1109/tac.2026.3665123",
+      "title": "Stability of Time-Varying Homogeneous Systems With Mixed Delays and Disturbances Through Novel Nonlinear Halanay Inequality",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3665123"
+    },
+    {
+      "date": "2026-08-20",
+      "doi": "10.1109/tac.2026.3676685",
+      "title": "Zero-Sum Game Optimized Control With Augmented Time-Synchronized Property",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3676685"
     }
   ],
   "digests": []
