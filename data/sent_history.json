@@ -1077,6 +1077,20 @@
       "title": "Stochastic Adaptive Estimation in Polynomial Curvature Shape State Space for Continuum Robots",
       "journal": "IEEE Transactions on Robotics",
       "url": "https://doi.org/10.1109/tro.2025.3637147"
+    },
+    {
+      "date": "2026-08-22",
+      "doi": "10.1109/tac.2026.3676318",
+      "title": "Event-Triggered Sliding-Mode Control for Switched Systems With Reachability-Guaranteed",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3676318"
+    },
+    {
+      "date": "2026-08-22",
+      "doi": "10.1109/tac.2026.3687476",
+      "title": "Encrypted Control for Timed Discrete Event Systems Using Homomorphic Encryption",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3687476"
     }
   ],
   "digests": []
