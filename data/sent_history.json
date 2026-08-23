@@ -1091,6 +1091,20 @@
       "title": "Encrypted Control for Timed Discrete Event Systems Using Homomorphic Encryption",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3687476"
+    },
+    {
+      "date": "2026-08-23",
+      "doi": "10.1109/tac.2026.3676368",
+      "title": "Equivalent and Compact Representations of Neural Network Controllers With Decision Trees",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3676368"
+    },
+    {
+      "date": "2026-08-23",
+      "doi": "10.1109/tac.2026.3665129",
+      "title": "Entropy-Regularized Backward Stochastic Control System With Partial Information: Optimality and Algorithm Implementation",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3665129"
     }
   ],
   "digests": []
