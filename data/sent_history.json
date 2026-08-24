@@ -1105,6 +1105,20 @@
       "title": "Entropy-Regularized Backward Stochastic Control System With Partial Information: Optimality and Algorithm Implementation",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3665129"
+    },
+    {
+      "date": "2026-08-24",
+      "doi": "10.1109/tie.2026.3675174",
+      "title": "Position Sensorless and Fault-Tolerance Control of Medium Speed SRMs via Self-Correcting Inductance-Based Observer",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3675174"
+    },
+    {
+      "date": "2026-08-24",
+      "doi": "10.1109/tie.2026.3672774",
+      "title": "Fast Quasi-Optimal Control of On-Board Energy Storage Systems for Regenerative Braking Energy Recovery Based on Area-Equivalence Principle",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3672774"
     }
   ],
   "digests": []
