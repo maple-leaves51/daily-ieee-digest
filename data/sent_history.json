@@ -1147,6 +1147,20 @@
       "title": "Generalizable and Fast Surrogates: Model Predictive Control of Articulated Soft Robots Using Physics-Informed Neural Networks",
       "journal": "IEEE Transactions on Robotics",
       "url": "https://doi.org/10.1109/tro.2025.3631818"
+    },
+    {
+      "date": "2026-08-27",
+      "doi": "10.1109/tro.2026.3672482",
+      "title": "Real-Time Monocular 2-D and 3-D Perception of Endoluminal Scenes for Controlling Flexible Robotic Endoscopic Instruments",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3672482"
+    },
+    {
+      "date": "2026-08-27",
+      "doi": "10.1109/tro.2025.3647777",
+      "title": "Robot Tracking Control With Natural Task-Space Decoupling",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2025.3647777"
     }
   ],
   "digests": []
