@@ -1161,6 +1161,20 @@
       "title": "Robot Tracking Control With Natural Task-Space Decoupling",
       "journal": "IEEE Transactions on Robotics",
       "url": "https://doi.org/10.1109/tro.2025.3647777"
+    },
+    {
+      "date": "2026-08-28",
+      "doi": "10.1109/tro.2025.3644358",
+      "title": "Curvature-Constrained Vector Field for Motion Planning of Nonholonomic Robots",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2025.3644358"
+    },
+    {
+      "date": "2026-08-28",
+      "doi": "10.1109/tro.2026.3701957",
+      "title": "A Third-Order Gaussian Process Trajectory Representation Framework With Closed-Form Kinematics for Continuous-Time Motion Estimation",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3701957"
     }
   ],
   "digests": []
