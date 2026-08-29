@@ -1175,6 +1175,20 @@
       "title": "A Third-Order Gaussian Process Trajectory Representation Framework With Closed-Form Kinematics for Continuous-Time Motion Estimation",
       "journal": "IEEE Transactions on Robotics",
       "url": "https://doi.org/10.1109/tro.2026.3701957"
+    },
+    {
+      "date": "2026-08-29",
+      "doi": "10.1109/tro.2026.3699455",
+      "title": "MaskPlanner: A Framework for 3D Learning-Based Object-Centric Motion Generation and Applications to Robotic Spray Painting",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3699455"
+    },
+    {
+      "date": "2026-08-29",
+      "doi": "10.1109/tro.2026.3697156",
+      "title": "6-D Tip Wrench Estimation for Continuum Robots: A Koopman-UKF-Wrench Decomposition Approach",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3697156"
     }
   ],
   "digests": []
