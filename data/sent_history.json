@@ -1203,6 +1203,20 @@
       "title": "Whole-Body Bilateral Teleoperation with Multi-Stage Object Parameter Estimation for Wheeled Humanoid Locomanipulation",
       "journal": "IEEE Transactions on Robotics",
       "url": "https://doi.org/10.1109/tro.2026.3721690"
+    },
+    {
+      "date": "2026-08-31",
+      "doi": "10.1109/tie.2026.3677686",
+      "title": "A Unidirectional Modular Magnetic-Coupled Converter (MMCC) With Reduced Switch Capacity for None-Regenerative Motor Drive",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3677686"
+    },
+    {
+      "date": "2026-08-31",
+      "doi": "10.1109/tie.2026.3675167",
+      "title": "Digital Twin–Driven Joint State Estimation Method for Lithium-Ion Battery States",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3675167"
     }
   ],
   "digests": []
