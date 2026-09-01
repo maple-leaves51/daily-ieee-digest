@@ -1217,6 +1217,20 @@
       "title": "Digital Twin–Driven Joint State Estimation Method for Lithium-Ion Battery States",
       "journal": "IEEE Transactions on Industrial Electronics",
       "url": "https://doi.org/10.1109/tie.2026.3675167"
+    },
+    {
+      "date": "2026-09-01",
+      "doi": "10.1109/tro.2026.3712458",
+      "title": "Bending-Aware Vision Co-Pilot for Intelligent Robotic Assistance in Endovascular Intervention",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3712458"
+    },
+    {
+      "date": "2026-09-01",
+      "doi": "10.1109/tro.2026.3686177",
+      "title": "Extreme High-Gain Friction Observer of Flexible Joint Robots With $\\mathcal {L}_{1}$ Adaptive Framework",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3686177"
     }
   ],
   "digests": []
