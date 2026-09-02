@@ -1245,6 +1245,20 @@
       "title": "LiDAR-BIND-T: Temporally Consistent Sensor Modality Translation and Fusion for Robotic Applications",
       "journal": "IEEE Transactions on Robotics",
       "url": "https://doi.org/10.1109/tro.2026.3710400"
+    },
+    {
+      "date": "2026-09-03",
+      "doi": "10.1109/tie.2026.3675078",
+      "title": "Uncrewed Aerial Vehicle Tracking Control Based on Eagle Vision and Evolution Theory",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3675078"
+    },
+    {
+      "date": "2026-09-03",
+      "doi": "10.1109/tie.2026.3672734",
+      "title": "Nonlinear End-Effector Tracking Control With Almost Disturbance Decoupling for Five-DOF Tower Cranes",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3672734"
     }
   ],
   "digests": []
