@@ -1259,6 +1259,20 @@
       "title": "Nonlinear End-Effector Tracking Control With Almost Disturbance Decoupling for Five-DOF Tower Cranes",
       "journal": "IEEE Transactions on Industrial Electronics",
       "url": "https://doi.org/10.1109/tie.2026.3672734"
+    },
+    {
+      "date": "2026-09-04",
+      "doi": "10.1109/tac.2026.3680845",
+      "title": "Data-Driven Control of Continuous-Time LTI Systems via Non-Minimal Realizations",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3680845"
+    },
+    {
+      "date": "2026-09-04",
+      "doi": "10.1109/tac.2026.3674419",
+      "title": "Model Reference Adaptive Control of Almost Periodic Piecewise Linear Systems With Variable Periods and Disturbance Input",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3674419"
     }
   ],
   "digests": []
