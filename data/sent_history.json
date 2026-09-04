@@ -1273,6 +1273,20 @@
       "title": "Model Reference Adaptive Control of Almost Periodic Piecewise Linear Systems With Variable Periods and Disturbance Input",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3674419"
+    },
+    {
+      "date": "2026-09-05",
+      "doi": "10.1109/tie.2026.3670263",
+      "title": "Alternating Information-Based Antidisturbance Security Control Under Dual-Rate Conditions: Application to Quadrotor Tracking Platforms",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3670263"
+    },
+    {
+      "date": "2026-09-05",
+      "doi": "10.1109/tie.2026.3675189",
+      "title": "Data-Driven Control of PMSM via Neural Networks With Active Disturbance Learning",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3675189"
     }
   ],
   "digests": []
