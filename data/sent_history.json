@@ -1301,6 +1301,20 @@
       "title": "A Neural Network-Based Fixed-Time MAV/UAVs Formation Tracking Control Scheme Design and Applications",
       "journal": "IEEE Transactions on Industrial Electronics",
       "url": "https://doi.org/10.1109/tie.2026.3675152"
+    },
+    {
+      "date": "2026-09-07",
+      "doi": "10.1109/tro.2026.3723945",
+      "title": "The Nonsmooth Impact Direction (NSID) of Robotic Systems",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3723945"
+    },
+    {
+      "date": "2026-09-07",
+      "doi": "10.1109/tro.2026.3706558",
+      "title": "Design, Control, and Motion Strategy for DELTA: Transformable Multilink Multirotor for Air–Ground Hybrid Locomotion and Manipulation",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3706558"
     }
   ],
   "digests": []
