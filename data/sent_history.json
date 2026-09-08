@@ -1329,6 +1329,20 @@
       "title": "Adaptive Model-Free Predictive Current Control of SPMSM Using Cascade Extended State Observers for Enhanced Disturbance Rejection",
       "journal": "IEEE Transactions on Industrial Electronics",
       "url": "https://doi.org/10.1109/tie.2026.3675149"
+    },
+    {
+      "date": "2026-09-09",
+      "doi": "10.1109/tac.2026.3682640",
+      "title": "Data-Driven Cooperative Output Regulation via Output Feedback Control",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3682640"
+    },
+    {
+      "date": "2026-09-09",
+      "doi": "10.1109/tac.2026.3680120",
+      "title": "Distributed Innovation-Constrained State Estimation Over Sensor Networks: A State-Dependent Coefficient Parameterization Approach",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3680120"
     }
   ],
   "digests": []
