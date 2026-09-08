@@ -1315,6 +1315,20 @@
       "title": "Design, Control, and Motion Strategy for DELTA: Transformable Multilink Multirotor for Air–Ground Hybrid Locomotion and Manipulation",
       "journal": "IEEE Transactions on Robotics",
       "url": "https://doi.org/10.1109/tro.2026.3706558"
+    },
+    {
+      "date": "2026-09-08",
+      "doi": "10.1109/tie.2026.3675040",
+      "title": "Integrated Pneumatic Servo Module for Mechanical Ventilation With ADRC and RLS-Based Feedforward Control",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3675040"
+    },
+    {
+      "date": "2026-09-08",
+      "doi": "10.1109/tie.2026.3675149",
+      "title": "Adaptive Model-Free Predictive Current Control of SPMSM Using Cascade Extended State Observers for Enhanced Disturbance Rejection",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3675149"
     }
   ],
   "digests": []
