@@ -1343,6 +1343,20 @@
       "title": "Distributed Innovation-Constrained State Estimation Over Sensor Networks: A State-Dependent Coefficient Parameterization Approach",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3680120"
+    },
+    {
+      "date": "2026-09-10",
+      "doi": "10.1109/tac.2026.3683628",
+      "title": "Neural Port-Hamiltonian Models for Nonlinear Distributed Control: An Unconstrained Parameterization Approach",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3683628"
+    },
+    {
+      "date": "2026-09-10",
+      "doi": "10.1109/tac.2026.3680123",
+      "title": "Set-Based State Estimation For Discrete-Time Semi-Markov Jump Linear Systems Using Zonotopes",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3680123"
     }
   ],
   "digests": []
