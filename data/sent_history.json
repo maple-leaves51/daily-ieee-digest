@@ -1357,6 +1357,20 @@
       "title": "Set-Based State Estimation For Discrete-Time Semi-Markov Jump Linear Systems Using Zonotopes",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3680123"
+    },
+    {
+      "date": "2026-09-11",
+      "doi": "10.1109/tie.2026.3677637",
+      "title": "Improved Deadbeat Predictive Current Control With Model-Aid Extended State Observer for CSI Fed PMSM",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3677637"
+    },
+    {
+      "date": "2026-09-11",
+      "doi": "10.1109/tie.2026.3677610",
+      "title": "Zero-Shot Open Circuit Fault Diagnosis of Converter Based on Prior-Knowledge Injected Dual Bayesian Network With Attention Mechanism",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3677610"
     }
   ],
   "digests": []
