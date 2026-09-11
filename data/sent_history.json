@@ -1371,6 +1371,20 @@
       "title": "Zero-Shot Open Circuit Fault Diagnosis of Converter Based on Prior-Knowledge Injected Dual Bayesian Network With Attention Mechanism",
       "journal": "IEEE Transactions on Industrial Electronics",
       "url": "https://doi.org/10.1109/tie.2026.3677610"
+    },
+    {
+      "date": "2026-09-12",
+      "doi": "10.1109/tro.2026.3663977",
+      "title": "Design and Implementation of an Anthropomorphic Robotic Hand With Key Kinematic Properties of the Human Hand",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3663977"
+    },
+    {
+      "date": "2026-09-12",
+      "doi": "10.1109/tro.2026.3706564",
+      "title": "Safety-Aware Adaptive Visual Servoing of Soft Robots through Online Shape-Force Transformation",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3706564"
     }
   ],
   "digests": []
