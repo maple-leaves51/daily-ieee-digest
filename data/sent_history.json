@@ -1399,6 +1399,20 @@
       "title": "Dynamical System Approach for Optimal Control Problems With Equilibrium Constraints Using Gap-Constraint-Based Reformulation",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3680118"
+    },
+    {
+      "date": "2026-09-14",
+      "doi": "10.1109/tro.2025.3637148",
+      "title": "db-ECBS: Interaction-Aware Multirobot Kinodynamic Motion Planning",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2025.3637148"
+    },
+    {
+      "date": "2026-09-14",
+      "doi": "10.1109/tro.2026.3706550",
+      "title": "A General Safety Framework for Autonomous Manipulation in Human Environments",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3706550"
     }
   ],
   "digests": []
