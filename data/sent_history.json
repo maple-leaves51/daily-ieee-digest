@@ -1427,6 +1427,20 @@
       "title": "Learning-Based Quadratic Programming for Safe Trajectory Tracking of Quadrotor UAVs in Dynamic Environments",
       "journal": "IEEE Transactions on Industrial Electronics",
       "url": "https://doi.org/10.1109/tie.2026.3677696"
+    },
+    {
+      "date": "2026-09-16",
+      "doi": "10.1109/tac.2026.3678473",
+      "title": "Accelerated Consensus-Based SPSA Algorithm for Multisensor Multitarget Tracking Problem",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3678473"
+    },
+    {
+      "date": "2026-09-16",
+      "doi": "10.1109/tac.2026.3674029",
+      "title": "Online Learning and Control Synthesis for Reachable Paths of Unknown Nonlinear Systems",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3674029"
     }
   ],
   "digests": []
