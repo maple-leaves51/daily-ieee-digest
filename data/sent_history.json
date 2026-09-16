@@ -1441,6 +1441,20 @@
       "title": "Online Learning and Control Synthesis for Reachable Paths of Unknown Nonlinear Systems",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3674029"
+    },
+    {
+      "date": "2026-09-17",
+      "doi": "10.1109/tie.2026.3675191",
+      "title": "Nut-Driven Transmission Force Controllable Motion Platform for Suppressing Low-Frequency and Impulsive Base Disturbances",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3675191"
+    },
+    {
+      "date": "2026-09-17",
+      "doi": "10.1109/tie.2026.3672856",
+      "title": "Anti-Saturation Speed Regulation Using Dual-Parameter Sliding Mode Observer for PMSM Servo Systems",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3672856"
     }
   ],
   "digests": []
