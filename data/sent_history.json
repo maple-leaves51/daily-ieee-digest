@@ -1455,6 +1455,20 @@
       "title": "Anti-Saturation Speed Regulation Using Dual-Parameter Sliding Mode Observer for PMSM Servo Systems",
       "journal": "IEEE Transactions on Industrial Electronics",
       "url": "https://doi.org/10.1109/tie.2026.3672856"
+    },
+    {
+      "date": "2026-09-18",
+      "doi": "10.1109/tie.2026.3663728",
+      "title": "Model-Free Predictive Current Control With Robust Reference for Grid-Connected Voltage Source Inverter With\n                    <i>LCL</i>\n                    Filter",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3663728"
+    },
+    {
+      "date": "2026-09-18",
+      "doi": "10.1109/tie.2026.3672865",
+      "title": "Virtual Space Vector Modulation for Three-Level Neutral-Point-Clamped Inverters Driving Three-Phase Series-End Winding Motors",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3672865"
     }
   ],
   "digests": []
