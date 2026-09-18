@@ -1469,6 +1469,20 @@
       "title": "Virtual Space Vector Modulation for Three-Level Neutral-Point-Clamped Inverters Driving Three-Phase Series-End Winding Motors",
       "journal": "IEEE Transactions on Industrial Electronics",
       "url": "https://doi.org/10.1109/tie.2026.3672865"
+    },
+    {
+      "date": "2026-09-19",
+      "doi": "10.1109/tac.2026.3678834",
+      "title": "Differentially Private Gradient-Tracking-Based Distributed Stochastic Optimization Over Directed Graphs",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3678834"
+    },
+    {
+      "date": "2026-09-19",
+      "doi": "10.1109/tac.2026.3680847",
+      "title": "One-Bit Consensus of Controllable Linear Multiagent Systems With Communication Noises",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3680847"
     }
   ],
   "digests": []
