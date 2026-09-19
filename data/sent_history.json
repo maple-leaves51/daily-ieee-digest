@@ -1483,6 +1483,20 @@
       "title": "One-Bit Consensus of Controllable Linear Multiagent Systems With Communication Noises",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3680847"
+    },
+    {
+      "date": "2026-09-20",
+      "doi": "10.1109/tie.2026.3675101",
+      "title": "Permanent Magnet Synchronous Motor Stator Current AM–FM Model and Demodulation Analysis for Demagnetization Fault Diagnosis",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3675101"
+    },
+    {
+      "date": "2026-09-20",
+      "doi": "10.1109/tie.2026.3672800",
+      "title": "A Novel Five-Level Power Converter With Model Predictive Torque Control for Four-Phase SRMs",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3672800"
     }
   ],
   "digests": []
