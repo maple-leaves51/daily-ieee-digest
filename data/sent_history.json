@@ -1497,6 +1497,20 @@
       "title": "A Novel Five-Level Power Converter With Model Predictive Torque Control for Four-Phase SRMs",
       "journal": "IEEE Transactions on Industrial Electronics",
       "url": "https://doi.org/10.1109/tie.2026.3672800"
+    },
+    {
+      "date": "2026-09-21",
+      "doi": "10.1109/tie.2026.3675173",
+      "title": "Practical Finite-Time Adaptive Control of Fractional-Order Systems With Asymmetric Hysteresis",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3675173"
+    },
+    {
+      "date": "2026-09-21",
+      "doi": "10.1109/tie.2026.3677612",
+      "title": "A Modular Coupled Inductor-Based Regenerative Cascaded Multicell Converter for Medium Voltage Drive",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3677612"
     }
   ],
   "digests": []
