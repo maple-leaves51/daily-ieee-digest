@@ -1525,6 +1525,20 @@
       "title": "Trajectory Prediction via Bayesian Intention Inference Under Unknown Goals and Kinematics",
       "journal": "IEEE Transactions on Robotics",
       "url": "https://doi.org/10.1109/tro.2026.3723948"
+    },
+    {
+      "date": "2026-09-23",
+      "doi": "10.1109/tro.2026.3653881",
+      "title": "A Fifth-Order POE-Based Method for Kinematic Identification and Inverse Kinematics of Serial Robots",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3653881"
+    },
+    {
+      "date": "2026-09-23",
+      "doi": "10.1109/tro.2026.3723975",
+      "title": "Mixture of Flow Matching and Particle Filter for Proprioception-Based Online Contact Estimation",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3723975"
     }
   ],
   "digests": []
