@@ -1539,6 +1539,20 @@
       "title": "Mixture of Flow Matching and Particle Filter for Proprioception-Based Online Contact Estimation",
       "journal": "IEEE Transactions on Robotics",
       "url": "https://doi.org/10.1109/tro.2026.3723975"
+    },
+    {
+      "date": "2026-09-24",
+      "doi": "10.1109/tac.2026.3676341",
+      "title": "Finite-Time Resilient Output Feedback Control for Semi-Markov Jump Systems With Imprecise Matching and Jumping Information",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3676341"
+    },
+    {
+      "date": "2026-09-24",
+      "doi": "10.1109/tac.2026.3682978",
+      "title": "Distributed Resilient Fixed-Time Control for Cooperative Output Regulation of MASs Over Directed Graphs Under DoS Attacks",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3682978"
     }
   ],
   "digests": []
