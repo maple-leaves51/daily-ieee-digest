@@ -1553,6 +1553,20 @@
       "title": "Distributed Resilient Fixed-Time Control for Cooperative Output Regulation of MASs Over Directed Graphs Under DoS Attacks",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3682978"
+    },
+    {
+      "date": "2026-09-25",
+      "doi": "10.1109/tie.2026.3675241",
+      "title": "DSP-Based Capacitor Voltage Estimation for Flying Capacitor Multilevel Inverters",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3675241"
+    },
+    {
+      "date": "2026-09-25",
+      "doi": "10.1109/tie.2026.3679714",
+      "title": "Minor-Fault Diagnosis Based on Reduced-Dimensional Zonotopic Filtering and Its Application to Inductor Current Analysis of Converter",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3679714"
     }
   ],
   "digests": []
