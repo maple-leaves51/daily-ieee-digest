@@ -1567,6 +1567,20 @@
       "title": "Minor-Fault Diagnosis Based on Reduced-Dimensional Zonotopic Filtering and Its Application to Inductor Current Analysis of Converter",
       "journal": "IEEE Transactions on Industrial Electronics",
       "url": "https://doi.org/10.1109/tie.2026.3679714"
+    },
+    {
+      "date": "2026-09-26",
+      "doi": "10.1109/tac.2026.3677734",
+      "title": "Communication and Control Co-Design in Noncooperative Games",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3677734"
+    },
+    {
+      "date": "2026-09-26",
+      "doi": "10.1109/tac.2026.3677764",
+      "title": "New Input-to-State Stability Results by Revisiting Vector Halanay’s Inequality",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3677764"
     }
   ],
   "digests": []
