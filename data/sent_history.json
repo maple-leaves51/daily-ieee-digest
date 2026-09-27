@@ -1581,6 +1581,20 @@
       "title": "New Input-to-State Stability Results by Revisiting Vector Halanay’s Inequality",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3677764"
+    },
+    {
+      "date": "2026-09-27",
+      "doi": "10.1109/tac.2026.3683625",
+      "title": "Regularization of the DREM Procedure for Parameter Estimation Under Partial Excitation",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3683625"
+    },
+    {
+      "date": "2026-09-27",
+      "doi": "10.1109/tac.2026.3680119",
+      "title": "Energy-Gain Control of Time-Varying Systems: Receding Horizon Approximation",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3680119"
     }
   ],
   "digests": []
