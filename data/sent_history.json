@@ -1595,6 +1595,20 @@
       "title": "Energy-Gain Control of Time-Varying Systems: Receding Horizon Approximation",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3680119"
+    },
+    {
+      "date": "2026-09-28",
+      "doi": "10.1109/tro.2026.3706552",
+      "title": "Ra\n                    <i>C</i>\n                    : Robot Learning for Long-Horizon Tasks by Scaling\n                    <u>R</u>\n                    ecovery\n                    <u>a</u>\n                    nd\n                    <u>C</u>\n                    orrection",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3706552"
+    },
+    {
+      "date": "2026-09-28",
+      "doi": "10.1109/tro.2026.3697140",
+      "title": "A Caterpillar-Type Miniature Robot for Adaptive Locomotion and Exploration of Tiny Rigid/Soft Pipes",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3697140"
     }
   ],
   "digests": []
