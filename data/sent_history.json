@@ -1609,6 +1609,20 @@
       "title": "A Caterpillar-Type Miniature Robot for Adaptive Locomotion and Exploration of Tiny Rigid/Soft Pipes",
       "journal": "IEEE Transactions on Robotics",
       "url": "https://doi.org/10.1109/tro.2026.3697140"
+    },
+    {
+      "date": "2026-09-29",
+      "doi": "10.1109/tac.2026.3683371",
+      "title": "Control Barrier Function-Based Attack Recovery With Provable Guarantees",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3683371"
+    },
+    {
+      "date": "2026-09-29",
+      "doi": "10.1109/tac.2026.3682211",
+      "title": "High-Perception-Area Collaborative Exploration of Double-Integrator Robots in Parabolic-Type Diffusion Fields With Partially Unknown Information",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3682211"
     }
   ],
   "digests": []
