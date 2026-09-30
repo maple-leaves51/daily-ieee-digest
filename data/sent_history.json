@@ -1623,6 +1623,20 @@
       "title": "High-Perception-Area Collaborative Exploration of Double-Integrator Robots in Parabolic-Type Diffusion Fields With Partially Unknown Information",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3682211"
+    },
+    {
+      "date": "2026-09-30",
+      "doi": "10.1109/tie.2026.3672733",
+      "title": "Synergistic Adaptive Robust Fault-Tolerant Control for Linear Motors: A Fully Actuated System Reference Model Approach",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3672733"
+    },
+    {
+      "date": "2026-09-30",
+      "doi": "10.1109/tie.2026.3684211",
+      "title": "Design of a Novel Piezoelectrically Actuated Elliptical Vibration Cutting System Using Hexagonal-Element Topology Optimization and Its Control",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3684211"
     }
   ],
   "digests": []
