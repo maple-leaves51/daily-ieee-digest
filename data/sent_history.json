@@ -1637,6 +1637,20 @@
       "title": "Design of a Novel Piezoelectrically Actuated Elliptical Vibration Cutting System Using Hexagonal-Element Topology Optimization and Its Control",
       "journal": "IEEE Transactions on Industrial Electronics",
       "url": "https://doi.org/10.1109/tie.2026.3684211"
+    },
+    {
+      "date": "2026-10-01",
+      "doi": "10.1109/tie.2026.3675197",
+      "title": "Low-Speed Sensorless Control With Fault-Tolerant Ability for SRM Using Unsaturated Inductance Reconstruction and Over-Relaxed Newton Method",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3675197"
+    },
+    {
+      "date": "2026-10-01",
+      "doi": "10.1109/tie.2026.3677627",
+      "title": "Reserved-Energy-Based Control Strategy for Enhanced Load Transient Response in Low-Capacitance Solid-State Transformers",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3677627"
     }
   ],
   "digests": []
