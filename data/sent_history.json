@@ -1651,6 +1651,20 @@
       "title": "Reserved-Energy-Based Control Strategy for Enhanced Load Transient Response in Low-Capacitance Solid-State Transformers",
       "journal": "IEEE Transactions on Industrial Electronics",
       "url": "https://doi.org/10.1109/tie.2026.3677627"
+    },
+    {
+      "date": "2026-10-02",
+      "doi": "10.1109/tac.2026.3688992",
+      "title": "Disturbance String Stability and ${\\mathcal H}_{\\infty }$-Based Robust Control for Heterogeneous Vehicle Platoons",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3688992"
+    },
+    {
+      "date": "2026-10-02",
+      "doi": "10.1109/tac.2026.3687815",
+      "title": "Error-Aware Nonlinear Gain-Based PID Tracking Control: A Constructive and Self-Tuning Approach",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3687815"
     }
   ],
   "digests": []
