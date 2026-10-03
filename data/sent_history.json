@@ -1665,6 +1665,20 @@
       "title": "Error-Aware Nonlinear Gain-Based PID Tracking Control: A Constructive and Self-Tuning Approach",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3687815"
+    },
+    {
+      "date": "2026-10-03",
+      "doi": "10.1109/tac.2026.3688200",
+      "title": "Optimal Control of Markov Decision Processes for Efficiency With Linear Temporal Logic Tasks",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3688200"
+    },
+    {
+      "date": "2026-10-03",
+      "doi": "10.1109/tac.2026.3693157",
+      "title": "Indefinite Time-Inconsistent Stochastic Linear-Quadratic Optimal Control Problem With Application",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3693157"
     }
   ],
   "digests": []
