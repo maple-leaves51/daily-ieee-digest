@@ -1679,6 +1679,20 @@
       "title": "Indefinite Time-Inconsistent Stochastic Linear-Quadratic Optimal Control Problem With Application",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3693157"
+    },
+    {
+      "date": "2026-10-04",
+      "doi": "10.1109/tro.2026.3738474",
+      "title": "SANDO: Safe Autonomous Trajectory Planning for Dynamic Unknown Environments",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3738474"
+    },
+    {
+      "date": "2026-10-04",
+      "doi": "10.1109/tro.2025.3644350",
+      "title": "The Power of Persuasion: How Social Robots Influence Our Decisions in Collaborative Activities",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2025.3644350"
     }
   ],
   "digests": []
