@@ -1693,6 +1693,20 @@
       "title": "The Power of Persuasion: How Social Robots Influence Our Decisions in Collaborative Activities",
       "journal": "IEEE Transactions on Robotics",
       "url": "https://doi.org/10.1109/tro.2025.3644350"
+    },
+    {
+      "date": "2026-10-05",
+      "doi": "10.1109/tac.2026.3683008",
+      "title": "Distributed Secure State Estimation Against Byzantine Agents: A Multihop Relay-Based Sorting and Filtering Method",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3683008"
+    },
+    {
+      "date": "2026-10-05",
+      "doi": "10.1109/tac.2026.3691256",
+      "title": "Distributed Tracking Control of Multiagent Systems With Actuator Saturation: A Dwell-Time-Based Cycle-Mirroring Stabilization Approach",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3691256"
     }
   ],
   "digests": []
