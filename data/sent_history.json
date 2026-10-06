@@ -1707,6 +1707,20 @@
       "title": "Distributed Tracking Control of Multiagent Systems With Actuator Saturation: A Dwell-Time-Based Cycle-Mirroring Stabilization Approach",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3691256"
+    },
+    {
+      "date": "2026-10-06",
+      "doi": "10.1109/tro.2026.3686266",
+      "title": "Edge Nearest Neighbor: Neighbor-Finding Revisited in Sampling-Based Motion Planning",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3686266"
+    },
+    {
+      "date": "2026-10-06",
+      "doi": "10.1109/tro.2026.3734131",
+      "title": "GelSLAM: A Real-time, High-Fidelity, and Robust 3D Tactile SLAM System",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3734131"
     }
   ],
   "digests": []
