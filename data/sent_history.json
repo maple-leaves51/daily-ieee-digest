@@ -1721,6 +1721,20 @@
       "title": "GelSLAM: A Real-time, High-Fidelity, and Robust 3D Tactile SLAM System",
       "journal": "IEEE Transactions on Robotics",
       "url": "https://doi.org/10.1109/tro.2026.3734131"
+    },
+    {
+      "date": "2026-10-07",
+      "doi": "10.1109/tie.2026.3675199",
+      "title": "GMPPO: Guided Model Predictive Path Optimization for Mobile Robots in Obstacle-Constrained Environments",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3675199"
+    },
+    {
+      "date": "2026-10-07",
+      "doi": "10.1109/tie.2026.3675087",
+      "title": "Reconfigurable DAB Converter With Variable Transformer Turns for Wide Voltage Range Using Hybrid EPS Modulation",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3675087"
     }
   ],
   "digests": []
