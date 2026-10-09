@@ -1763,6 +1763,20 @@
       "title": "Comprehensive Analysis of an Isolated Boost Converter Based on the Converter PWM Switch (CPS) Concept",
       "journal": "IEEE Transactions on Industrial Electronics",
       "url": "https://doi.org/10.1109/tie.2026.3677638"
+    },
+    {
+      "date": "2026-10-10",
+      "doi": "10.1109/tac.2026.3687847",
+      "title": "Adaptive Tracking Control for Quantized Linear Stochastic Regression Systems: Asymptotic Property Under Nonperiodic Signals",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3687847"
+    },
+    {
+      "date": "2026-10-10",
+      "doi": "10.1109/tac.2026.3684796",
+      "title": "Distributed Control Lyapunov and Control Barrier Certificates for Reactive Formation",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3684796"
     }
   ],
   "digests": []
