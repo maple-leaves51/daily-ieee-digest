@@ -1777,6 +1777,20 @@
       "title": "Distributed Control Lyapunov and Control Barrier Certificates for Reactive Formation",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3684796"
+    },
+    {
+      "date": "2026-10-11",
+      "doi": "10.1109/tac.2026.3691015",
+      "title": "Estimation and Prevention of Sensor Replacement Attacks in Supervisory Control Systems",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3691015"
+    },
+    {
+      "date": "2026-10-11",
+      "doi": "10.1109/tac.2026.3687823",
+      "title": "Observers for Timed DESs With Observation Delays and Losses",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3687823"
     }
   ],
   "digests": []
