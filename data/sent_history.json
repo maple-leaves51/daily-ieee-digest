@@ -1805,6 +1805,20 @@
       "title": "Inverse Dynamic Modeling of Soft Parallel Robots Actuated by Dielectric Elastomer Actuators",
       "journal": "IEEE Transactions on Robotics",
       "url": "https://doi.org/10.1109/tro.2026.3741520"
+    },
+    {
+      "date": "2026-10-13",
+      "doi": "10.1109/tie.2026.3675236",
+      "title": "Recycling Flux-Leakage: A Novel Design Strategy for High Torque Density Permanent Magnet Motors",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3675236"
+    },
+    {
+      "date": "2026-10-13",
+      "doi": "10.1109/tie.2026.3675116",
+      "title": "A Discretization Approach Based on Space Rotation Minimization Frames for Hyper-Redundant Robots",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3675116"
     }
   ],
   "digests": []
