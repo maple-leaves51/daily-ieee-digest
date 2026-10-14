@@ -1833,6 +1833,20 @@
       "title": "Data-Augmented Adaptive Oscillators: A Framework for Robust Gait Phase Estimation in Exoskeleton Assistance",
       "journal": "IEEE Transactions on Robotics",
       "url": "https://doi.org/10.1109/tro.2026.3742234"
+    },
+    {
+      "date": "2026-10-15",
+      "doi": "10.1109/tro.2026.3706570",
+      "title": "Learning Robot Safety From Sparse Human Feedback Using Conformal Prediction",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3706570"
+    },
+    {
+      "date": "2026-10-15",
+      "doi": "10.1109/tro.2026.3697167",
+      "title": "The Unreasonable Effectiveness of Discrete-Time Gaussian Process Mixtures for Robot Policy Learning",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3697167"
     }
   ],
   "digests": []
