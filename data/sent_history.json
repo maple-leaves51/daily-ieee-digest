@@ -1875,6 +1875,20 @@
       "title": "Risk-Sensitive Control With Multiarmed Bandit Adaptive Sampling",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3693154"
+    },
+    {
+      "date": "2026-10-18",
+      "doi": "10.1109/tac.2026.3692001",
+      "title": "A Transfer Learning Method for Safety Control of Linear Systems Under Input Saturation",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3692001"
+    },
+    {
+      "date": "2026-10-18",
+      "doi": "10.1109/tac.2026.3687496",
+      "title": "Adaptive Deep Neural Network-Based Control Barrier Functions",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3687496"
     }
   ],
   "digests": []
