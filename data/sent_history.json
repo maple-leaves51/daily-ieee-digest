@@ -1889,6 +1889,20 @@
       "title": "Adaptive Deep Neural Network-Based Control Barrier Functions",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3687496"
+    },
+    {
+      "date": "2026-10-19",
+      "doi": "10.1109/tac.2026.3693027",
+      "title": "Nonparametric Control Koopman Operators",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3693027"
+    },
+    {
+      "date": "2026-10-19",
+      "doi": "10.1109/tac.2026.3689008",
+      "title": "Dealing With Indistinguishability in Gluing KKL Observer Design for Hybrid Systems With Unknown Jump Times",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3689008"
     }
   ],
   "digests": []
