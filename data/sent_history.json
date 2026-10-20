@@ -1917,6 +1917,20 @@
       "title": "Multistability of Self-Attention Dynamics in Transformers",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3687461"
+    },
+    {
+      "date": "2026-10-21",
+      "doi": "10.1109/tie.2026.3675113",
+      "title": "Lithium Battery State of Charge Estimation Based on Improved Firefly Algorithm Optimized Dual Extended Kalman Filter",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3675113"
+    },
+    {
+      "date": "2026-10-21",
+      "doi": "10.1109/tie.2026.3672822",
+      "title": "Modeling and Control for UAV With Off-Center Slung Load",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3672822"
     }
   ],
   "digests": []
