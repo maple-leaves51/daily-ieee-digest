@@ -1903,6 +1903,20 @@
       "title": "Dealing With Indistinguishability in Gluing KKL Observer Design for Hybrid Systems With Unknown Jump Times",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3689008"
+    },
+    {
+      "date": "2026-10-20",
+      "doi": "10.1109/tac.2026.3693156",
+      "title": "Advanced Safety Filter Based on SOS Control Barrier and Lyapunov Functions",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3693156"
+    },
+    {
+      "date": "2026-10-20",
+      "doi": "10.1109/tac.2026.3687461",
+      "title": "Multistability of Self-Attention Dynamics in Transformers",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3687461"
     }
   ],
   "digests": []
