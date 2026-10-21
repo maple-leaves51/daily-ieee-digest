@@ -1931,6 +1931,20 @@
       "title": "Modeling and Control for UAV With Off-Center Slung Load",
       "journal": "IEEE Transactions on Industrial Electronics",
       "url": "https://doi.org/10.1109/tie.2026.3672822"
+    },
+    {
+      "date": "2026-10-22",
+      "doi": "10.1109/tac.2026.3691023",
+      "title": "Computing Safety Margins of Parameterized Nonlinear Systems for Vulnerability Assessment via Trajectory Sensitivities",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3691023"
+    },
+    {
+      "date": "2026-10-22",
+      "doi": "10.1109/tac.2026.3691259",
+      "title": "Discontinuous Integro-Differential Equations and Sliding Mode Control",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3691259"
     }
   ],
   "digests": []
