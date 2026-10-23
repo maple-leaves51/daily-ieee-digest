@@ -1959,6 +1959,20 @@
       "title": "Analytical Framework for Assessing Source Behavior of Grid-Interactive Power Converters",
       "journal": "IEEE Transactions on Industrial Electronics",
       "url": "https://doi.org/10.1109/tie.2026.3675196"
+    },
+    {
+      "date": "2026-10-24",
+      "doi": "10.1109/tie.2026.3682401",
+      "title": "Fully Data-Driven Inductance Reconstruction for Position-Sensorless Control of Switched Reluctance Motors",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3682401"
+    },
+    {
+      "date": "2026-10-24",
+      "doi": "10.1109/tie.2026.3679781",
+      "title": "Duty Ratio Based Model Predictive Flux Control With Direct Switching-State Selection for Induction Motor Drives",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3679781"
     }
   ],
   "digests": []
