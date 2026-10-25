@@ -1973,6 +1973,20 @@
       "title": "Duty Ratio Based Model Predictive Flux Control With Direct Switching-State Selection for Induction Motor Drives",
       "journal": "IEEE Transactions on Industrial Electronics",
       "url": "https://doi.org/10.1109/tie.2026.3679781"
+    },
+    {
+      "date": "2026-10-25",
+      "doi": "10.1109/tro.2026.3744512",
+      "title": "Biomechanics-Aware Trajectory Optimization for Online Navigation During Robotic Physiotherapy",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3744512"
+    },
+    {
+      "date": "2026-10-25",
+      "doi": "10.1109/tro.2026.3744509",
+      "title": "UniConFlow: A Unified Constrained Flow-Matching Framework for Certified Motion Planning",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3744509"
     }
   ],
   "digests": []
