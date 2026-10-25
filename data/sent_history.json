@@ -1987,6 +1987,20 @@
       "title": "UniConFlow: A Unified Constrained Flow-Matching Framework for Certified Motion Planning",
       "journal": "IEEE Transactions on Robotics",
       "url": "https://doi.org/10.1109/tro.2026.3744509"
+    },
+    {
+      "date": "2026-10-26",
+      "doi": "10.1109/tac.2026.3693191",
+      "title": "Fundamental Limitations of Monotonic Tracking Systems",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3693191"
+    },
+    {
+      "date": "2026-10-26",
+      "doi": "10.1109/tac.2026.3691226",
+      "title": "A New Approach to the Data-Driven Output-Based LQR Problem of Continuous-Time Linear Systems",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3691226"
     }
   ],
   "digests": []
