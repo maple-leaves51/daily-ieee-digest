@@ -2001,6 +2001,20 @@
       "title": "A New Approach to the Data-Driven Output-Based LQR Problem of Continuous-Time Linear Systems",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3691226"
+    },
+    {
+      "date": "2026-10-27",
+      "doi": "10.1109/tro.2026.3747246",
+      "title": "Hierarchical Learning Framework for Task-Level Autonomous Intraoperative Image-Guided Robotic Catheterization with In-Vivo Validation",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3747246"
+    },
+    {
+      "date": "2026-10-27",
+      "doi": "10.1109/tro.2026.3723214",
+      "title": "Unified Framework for Robot Calibration via Product Manifold Optimization and Riemannian Bayesian Optimization",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3723214"
     }
   ],
   "digests": []
