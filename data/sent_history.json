@@ -2029,6 +2029,20 @@
       "title": "Adaptive Sliding-Mode Repetitive Control for Time-Varying Periodic References With Application to Servomotor Systems",
       "journal": "IEEE Transactions on Industrial Electronics",
       "url": "https://doi.org/10.1109/tie.2026.3682402"
+    },
+    {
+      "date": "2026-10-29",
+      "doi": "10.1109/tac.2026.3705299",
+      "title": "Distributed Resilient State Estimation and Control With Strategically Implemented Security Measures",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3705299"
+    },
+    {
+      "date": "2026-10-29",
+      "doi": "10.1109/tac.2026.3705298",
+      "title": "Distributed Data-Driven State Estimation for Unknown Linear Systems",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3705298"
     }
   ],
   "digests": []
