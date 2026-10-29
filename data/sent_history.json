@@ -2043,6 +2043,20 @@
       "title": "Distributed Data-Driven State Estimation for Unknown Linear Systems",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3705298"
+    },
+    {
+      "date": "2026-10-30",
+      "doi": "10.1109/tie.2026.3684239",
+      "title": "A Trajectory-Optimized Predictive Control for Power Converters",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3684239"
+    },
+    {
+      "date": "2026-10-30",
+      "doi": "10.1109/tie.2026.3686575",
+      "title": "Anti-Swing Trajectory Tracking of Slung-Payload UAVs: An Attention-Infused Neural Observer Approach With Output Constraints",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3686575"
     }
   ],
   "digests": []
