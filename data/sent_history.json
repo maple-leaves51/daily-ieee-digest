@@ -2057,6 +2057,20 @@
       "title": "Anti-Swing Trajectory Tracking of Slung-Payload UAVs: An Attention-Infused Neural Observer Approach With Output Constraints",
       "journal": "IEEE Transactions on Industrial Electronics",
       "url": "https://doi.org/10.1109/tie.2026.3686575"
+    },
+    {
+      "date": "2026-10-31",
+      "doi": "10.1109/tie.2026.3672837",
+      "title": "Knowledge-and-Data-Driven MPC for Planar Trajectory Tracking of Uncrewed Systems Under Collision Avoidance Clearance Constraints",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3672837"
+    },
+    {
+      "date": "2026-10-31",
+      "doi": "10.1109/tie.2026.3682378",
+      "title": "Model-Free Predictive Current Control for PMSM Using Improved Adaptive Moment Estimation-Based Extended State Observer",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3682378"
     }
   ],
   "digests": []
