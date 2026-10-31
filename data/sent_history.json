@@ -2071,6 +2071,20 @@
       "title": "Model-Free Predictive Current Control for PMSM Using Improved Adaptive Moment Estimation-Based Extended State Observer",
       "journal": "IEEE Transactions on Industrial Electronics",
       "url": "https://doi.org/10.1109/tie.2026.3682378"
+    },
+    {
+      "date": "2026-11-01",
+      "doi": "10.1109/tac.2026.3709721",
+      "title": "Robust Model Predictive Control for Constrained Uncertain Systems Based on Concentric Container and Varying Tube",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3709721"
+    },
+    {
+      "date": "2026-11-01",
+      "doi": "10.1109/tac.2026.3705338",
+      "title": "Data-Driven Control of Switched Linear Positive Systems Using Robust Convex Optimization",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3705338"
     }
   ],
   "digests": []
