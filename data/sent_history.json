@@ -2085,6 +2085,20 @@
       "title": "Data-Driven Control of Switched Linear Positive Systems Using Robust Convex Optimization",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3705338"
+    },
+    {
+      "date": "2026-11-02",
+      "doi": "10.1109/tie.2026.3672785",
+      "title": "Learning Complex Robotic Manipulation Tasks Using Neural Networks: A Dynamical Systems Approach",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3672785"
+    },
+    {
+      "date": "2026-11-02",
+      "doi": "10.1109/tie.2026.3686578",
+      "title": "Structured Fuzzy Modeling for Autonomous Ground Vehicle Trajectory Tracking With RNN-Assisted Guidance Optimization",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3686578"
     }
   ],
   "digests": []
