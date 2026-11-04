@@ -2113,6 +2113,20 @@
       "title": "A Shared Control Framework for Mobile Robots with Planning-Level Intention Prediction",
       "journal": "IEEE Transactions on Robotics",
       "url": "https://doi.org/10.1109/tro.2026.3749823"
+    },
+    {
+      "date": "2026-11-04",
+      "doi": "10.1109/tac.2026.3698001",
+      "title": "Asymptotic Stability in Distribution for Logical Networks Under Probabilistic Flipping Control",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3698001"
+    },
+    {
+      "date": "2026-11-04",
+      "doi": "10.1109/tac.2026.3703305",
+      "title": "Distributed Recursive State Estimation Over Sensor Networks Under the Push-Pull-Based Gossip Protocol: A Locally Minimum Variance Approach",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3703305"
     }
   ],
   "digests": []
