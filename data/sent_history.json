@@ -2127,6 +2127,20 @@
       "title": "Distributed Recursive State Estimation Over Sensor Networks Under the Push-Pull-Based Gossip Protocol: A Locally Minimum Variance Approach",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3703305"
+    },
+    {
+      "date": "2026-11-05",
+      "doi": "10.1109/tie.2026.3682374",
+      "title": "A Reconfigurable Four-Level/Six-Level Inverter-Fed Variable Pole–Phase Induction Motor Drive With Fault Tolerant Capability",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3682374"
+    },
+    {
+      "date": "2026-11-05",
+      "doi": "10.1109/tie.2026.3677626",
+      "title": "Multirate Finite-Control-Set Motor Parameter-Free Predictive Control for SPMSM Drives",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3677626"
     }
   ],
   "digests": []
