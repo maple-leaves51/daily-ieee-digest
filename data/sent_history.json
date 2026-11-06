@@ -2155,6 +2155,20 @@
       "title": "TSFNN-Based Sensorless Diagnosis of Inter-Turn Short Circuits in Linear-Motor-Driven Steering Actuator",
       "journal": "IEEE Transactions on Industrial Electronics",
       "url": "https://doi.org/10.1109/tie.2026.3688813"
+    },
+    {
+      "date": "2026-11-07",
+      "doi": "10.1109/tro.2026.3749178",
+      "title": "Multicopter Reinforcement Learning Control with Safety Guarantees",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3749178"
+    },
+    {
+      "date": "2026-11-07",
+      "doi": "10.1109/tro.2026.3750684",
+      "title": "A Self-Interactive Assist-as-Needed Control for Upper Limb Rehabilitation",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3750684"
     }
   ],
   "digests": []
