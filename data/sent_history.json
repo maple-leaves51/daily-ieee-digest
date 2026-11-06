@@ -2141,6 +2141,20 @@
       "title": "Multirate Finite-Control-Set Motor Parameter-Free Predictive Control for SPMSM Drives",
       "journal": "IEEE Transactions on Industrial Electronics",
       "url": "https://doi.org/10.1109/tie.2026.3677626"
+    },
+    {
+      "date": "2026-11-06",
+      "doi": "10.1109/tie.2026.3688856",
+      "title": "Discrete Fuzzy Approximation-Based Sliding Mode Current Control for Torque Ripple Suppression in Switched Reluctance Motors",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3688856"
+    },
+    {
+      "date": "2026-11-06",
+      "doi": "10.1109/tie.2026.3688813",
+      "title": "TSFNN-Based Sensorless Diagnosis of Inter-Turn Short Circuits in Linear-Motor-Driven Steering Actuator",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3688813"
     }
   ],
   "digests": []
