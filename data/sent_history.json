@@ -2169,6 +2169,20 @@
       "title": "A Self-Interactive Assist-as-Needed Control for Upper Limb Rehabilitation",
       "journal": "IEEE Transactions on Robotics",
       "url": "https://doi.org/10.1109/tro.2026.3750684"
+    },
+    {
+      "date": "2026-11-08",
+      "doi": "10.1109/tac.2026.3705297",
+      "title": "Combined Learning of Linear Parameter-Varying Models and Robust Control Invariant Sets",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3705297"
+    },
+    {
+      "date": "2026-11-08",
+      "doi": "10.1109/tac.2026.3697997",
+      "title": "Distributed Optimal Control Using Interval-Excited Relative-Output Reinforcement Learning Algorithm",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3697997"
     }
   ],
   "digests": []
