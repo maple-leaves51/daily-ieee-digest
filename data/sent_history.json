@@ -2183,6 +2183,20 @@
       "title": "Distributed Optimal Control Using Interval-Excited Relative-Output Reinforcement Learning Algorithm",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3697997"
+    },
+    {
+      "date": "2026-11-09",
+      "doi": "10.1109/tro.2026.3749199",
+      "title": "SCOPE: Surround-view Collision Prediction via Panoramic Oriented TTC Estimation",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3749199"
+    },
+    {
+      "date": "2026-11-09",
+      "doi": "10.1109/tro.2025.3631816",
+      "title": "A Survey on Deep Generative Models for Robot Learning From Multimodal Demonstrations",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2025.3631816"
     }
   ],
   "digests": []
