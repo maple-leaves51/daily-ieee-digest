@@ -2197,6 +2197,20 @@
       "title": "A Survey on Deep Generative Models for Robot Learning From Multimodal Demonstrations",
       "journal": "IEEE Transactions on Robotics",
       "url": "https://doi.org/10.1109/tro.2025.3631816"
+    },
+    {
+      "date": "2026-11-10",
+      "doi": "10.1109/tro.2026.3661723",
+      "title": "A Pill Bug-Inspired Two-Mode Mobile Robot Covered With Sliding Curvy Shells",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3661723"
+    },
+    {
+      "date": "2026-11-10",
+      "doi": "10.1109/tro.2026.3686280",
+      "title": "Multirobot Target Monitoring and Encirclement via Triggered Distributed Feedback Optimization",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3686280"
     }
   ],
   "digests": []
