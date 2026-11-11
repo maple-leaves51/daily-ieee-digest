@@ -2211,6 +2211,20 @@
       "title": "Multirobot Target Monitoring and Encirclement via Triggered Distributed Feedback Optimization",
       "journal": "IEEE Transactions on Robotics",
       "url": "https://doi.org/10.1109/tro.2026.3686280"
+    },
+    {
+      "date": "2026-11-11",
+      "doi": "10.1109/tie.2026.3688864",
+      "title": "Maximum Efficiency Point Tracking Technology for Dual-Bridge Series Resonant Converter",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3688864"
+    },
+    {
+      "date": "2026-11-11",
+      "doi": "10.1109/tie.2026.3679841",
+      "title": "A Hybrid Controller for Constant Current and Constant Voltage Mode in a Single-Stage Power Factor Corrected Wireless Power Transfer Converter",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3679841"
     }
   ],
   "digests": []
