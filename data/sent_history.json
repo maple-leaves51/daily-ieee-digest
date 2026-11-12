@@ -2225,6 +2225,20 @@
       "title": "A Hybrid Controller for Constant Current and Constant Voltage Mode in a Single-Stage Power Factor Corrected Wireless Power Transfer Converter",
       "journal": "IEEE Transactions on Industrial Electronics",
       "url": "https://doi.org/10.1109/tie.2026.3679841"
+    },
+    {
+      "date": "2026-11-12",
+      "doi": "10.1109/tro.2026.3752259",
+      "title": "Ergodic Heat Coverage Control: Model-Free Robotic Regulation of Temperature Distributions",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3752259"
+    },
+    {
+      "date": "2026-11-12",
+      "doi": "10.1109/tro.2026.3666154",
+      "title": "Multimode Pneumatic Artificial Muscles Driven by Hybrid Positive–Negative Pressure",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3666154"
     }
   ],
   "digests": []
