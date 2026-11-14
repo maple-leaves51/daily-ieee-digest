@@ -2253,6 +2253,20 @@
       "title": "Behavior-Controllable Stable Dynamics Models on Riemannian Configuration Manifolds",
       "journal": "IEEE Transactions on Robotics",
       "url": "https://doi.org/10.1109/tro.2025.3647763"
+    },
+    {
+      "date": "2026-11-14",
+      "doi": "10.1109/tie.2026.3682373",
+      "title": "Accurate Rotor Position Estimation for Spherical Reluctance Motor Based on Improved Segmentation Strategy",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3682373"
+    },
+    {
+      "date": "2026-11-14",
+      "doi": "10.1109/tie.2026.3684235",
+      "title": "Toward Automatic GI Tract Intervention With a Novel Shape-Aware Robotic Endoscope",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3684235"
     }
   ],
   "digests": []
