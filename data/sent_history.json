@@ -2267,6 +2267,20 @@
       "title": "Toward Automatic GI Tract Intervention With a Novel Shape-Aware Robotic Endoscope",
       "journal": "IEEE Transactions on Industrial Electronics",
       "url": "https://doi.org/10.1109/tie.2026.3684235"
+    },
+    {
+      "date": "2026-11-15",
+      "doi": "10.1109/tro.2026.3731535",
+      "title": "From Local Odometry to Global Awareness: A Two-Stage Filter-Based Distributed Odometry for Multirobot Systems",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3731535"
+    },
+    {
+      "date": "2026-11-15",
+      "doi": "10.1109/tro.2026.3688101",
+      "title": "Allocation for Omnidirectional Aerial Robots: Incorporating Power Dynamics",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3688101"
     }
   ],
   "digests": []
