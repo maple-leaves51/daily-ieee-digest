@@ -2295,6 +2295,20 @@
       "title": "Nonlinear Optimal Control Beyond the Hamilton–Jacobi–Bellman Equation",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3698695"
+    },
+    {
+      "date": "2026-11-17",
+      "doi": "10.1109/tro.2026.3677009",
+      "title": "Spatial Balancing for RGB-Thermal Semantic Segmentation in Autonomous Driving: A Study From Analysis to Improvement",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3677009"
+    },
+    {
+      "date": "2026-11-17",
+      "doi": "10.1109/tro.2026.3750685",
+      "title": "Normalizing Flow-Enhanced Message Passing for Multirobot Collaborative Localization",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3750685"
     }
   ],
   "digests": []
