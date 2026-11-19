@@ -2323,6 +2323,20 @@
       "title": "Collaborative Design of Conductor Plate and Switching Pattern for SiC Three-Level ANPC Inverter in PMSM Drives",
       "journal": "IEEE Transactions on Industrial Electronics",
       "url": "https://doi.org/10.1109/tie.2026.3679805"
+    },
+    {
+      "date": "2026-11-19",
+      "doi": "10.1109/tac.2026.3699833",
+      "title": "Nonlinear Model Predictive Control Using a Modified Sequential Convex Programming",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3699833"
+    },
+    {
+      "date": "2026-11-19",
+      "doi": "10.1109/tac.2026.3695802",
+      "title": "Similarity-Based Control: Bettering Operation of Iterative Learning Under Noisy I/O Data",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3695802"
     }
   ],
   "digests": []
