@@ -2337,6 +2337,20 @@
       "title": "Similarity-Based Control: Bettering Operation of Iterative Learning Under Noisy I/O Data",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3695802"
+    },
+    {
+      "date": "2026-11-20",
+      "doi": "10.1109/tro.2026.3754504",
+      "title": "How dexterous is your robotic hand? A model-based approach for in-hand manipulation and dexterity evaluation",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3754504"
+    },
+    {
+      "date": "2026-11-20",
+      "doi": "10.1109/tro.2026.3755907",
+      "title": "Decompose and Reorganize: Planning with Primitives and Visuomotor Policies Learned from Demonstrations",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3755907"
     }
   ],
   "digests": []
