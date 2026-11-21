@@ -2365,6 +2365,20 @@
       "title": "Robust Adaptive Control of State-Constrained Hysteretic Nonlinear Systems via Fuzzy Pseudoinverse Compensation: Application to Giant Magnetostrictive Actuators",
       "journal": "IEEE Transactions on Industrial Electronics",
       "url": "https://doi.org/10.1109/tie.2026.3682360"
+    },
+    {
+      "date": "2026-11-22",
+      "doi": "10.1109/tie.2026.3684197",
+      "title": "Efficiency Optimization Strategy for Single-Stage Resonant DAB Microinverter Based on Phase Shift Angle Decoupling Control",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3684197"
+    },
+    {
+      "date": "2026-11-22",
+      "doi": "10.1109/tie.2026.3657009",
+      "title": "Parameter Design of DC Voltage Loop and PLL for Grid-Connected Inverter to Achieve Robust Stability Over Full Current Range Under Weak Grid",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3657009"
     }
   ],
   "digests": []
