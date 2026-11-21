@@ -2351,6 +2351,20 @@
       "title": "Decompose and Reorganize: Planning with Primitives and Visuomotor Policies Learned from Demonstrations",
       "journal": "IEEE Transactions on Robotics",
       "url": "https://doi.org/10.1109/tro.2026.3755907"
+    },
+    {
+      "date": "2026-11-21",
+      "doi": "10.1109/tie.2026.3679764",
+      "title": "An Adaptive Finite-Time Convergent Neural Network With Enhanced Joint Limit Constraints for 3-DoF Visual Servoing of Rigid-Flexible Coupling Robots",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3679764"
+    },
+    {
+      "date": "2026-11-21",
+      "doi": "10.1109/tie.2026.3682360",
+      "title": "Robust Adaptive Control of State-Constrained Hysteretic Nonlinear Systems via Fuzzy Pseudoinverse Compensation: Application to Giant Magnetostrictive Actuators",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3682360"
     }
   ],
   "digests": []
