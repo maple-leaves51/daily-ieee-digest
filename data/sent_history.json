@@ -2379,6 +2379,20 @@
       "title": "Parameter Design of DC Voltage Loop and PLL for Grid-Connected Inverter to Achieve Robust Stability Over Full Current Range Under Weak Grid",
       "journal": "IEEE Transactions on Industrial Electronics",
       "url": "https://doi.org/10.1109/tie.2026.3657009"
+    },
+    {
+      "date": "2026-11-23",
+      "doi": "10.1109/tac.2026.3705990",
+      "title": "Optimal Tracking of Time-Varying Formation in Open Nonlinear Multiagent Systems",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3705990"
+    },
+    {
+      "date": "2026-11-23",
+      "doi": "10.1109/tac.2026.3707996",
+      "title": "Linear Filter for Discrete-Time Systems Driven by Fractional Noises",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3707996"
     }
   ],
   "digests": []
