@@ -2393,6 +2393,20 @@
       "title": "Linear Filter for Discrete-Time Systems Driven by Fractional Noises",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3707996"
+    },
+    {
+      "date": "2026-11-24",
+      "doi": "10.1109/tro.2026.3755612",
+      "title": "Magnetization-Encoded Soft Millirobots: Parametric Decoupling and On-Demand Drug Delivery in Complex Environments",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3755612"
+    },
+    {
+      "date": "2026-11-24",
+      "doi": "10.1109/tro.2026.3754500",
+      "title": "Task-Oriented Assembly and Disassembly of Modular Magnetic Microrobots",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3754500"
     }
   ],
   "digests": []
