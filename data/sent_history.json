@@ -2407,6 +2407,20 @@
       "title": "Task-Oriented Assembly and Disassembly of Modular Magnetic Microrobots",
       "journal": "IEEE Transactions on Robotics",
       "url": "https://doi.org/10.1109/tro.2026.3754500"
+    },
+    {
+      "date": "2026-11-25",
+      "doi": "10.1109/tie.2026.3686567",
+      "title": "Toward Smart Laboratories: A Robotic Gripper Integrating MSSPP Sensing for Simultaneous Grasping Monitoring and Material Identification",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3686567"
+    },
+    {
+      "date": "2026-11-25",
+      "doi": "10.1109/tie.2026.3682379",
+      "title": "Extended Gramian Angular Field: An Efficient Method for Encoding Time Series as Images and Its Application in Power Converter Open Circuit Fault Diagnosis",
+      "journal": "IEEE Transactions on Industrial Electronics",
+      "url": "https://doi.org/10.1109/tie.2026.3682379"
     }
   ],
   "digests": []
