@@ -2421,6 +2421,20 @@
       "title": "Extended Gramian Angular Field: An Efficient Method for Encoding Time Series as Images and Its Application in Power Converter Open Circuit Fault Diagnosis",
       "journal": "IEEE Transactions on Industrial Electronics",
       "url": "https://doi.org/10.1109/tie.2026.3682379"
+    },
+    {
+      "date": "2026-11-26",
+      "doi": "10.1109/tac.2026.3701302",
+      "title": "Matrix Control Barrier Functions",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3701302"
+    },
+    {
+      "date": "2026-11-26",
+      "doi": "10.1109/tac.2026.3701274",
+      "title": "Parallel Cascade Decomposition for Supervisory Control of State-Tree Structures",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3701274"
     }
   ],
   "digests": []
