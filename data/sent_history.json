@@ -2435,6 +2435,20 @@
       "title": "Parallel Cascade Decomposition for Supervisory Control of State-Tree Structures",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3701274"
+    },
+    {
+      "date": "2026-11-27",
+      "doi": "10.1109/tac.2026.3703308",
+      "title": "Passivity-Based Asynchronous Control of Piecewise Homogeneous Markov Jump Linear Systems With Partially Known Probabilities",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3703308"
+    },
+    {
+      "date": "2026-11-27",
+      "doi": "10.1109/tac.2026.3701606",
+      "title": "Autonomous Node Type Identification in Distributed and Asynchronous Networks",
+      "journal": "IEEE Transactions on Automatic Control",
+      "url": "https://doi.org/10.1109/tac.2026.3701606"
     }
   ],
   "digests": []
