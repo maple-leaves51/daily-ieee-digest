@@ -2449,6 +2449,20 @@
       "title": "Autonomous Node Type Identification in Distributed and Asynchronous Networks",
       "journal": "IEEE Transactions on Automatic Control",
       "url": "https://doi.org/10.1109/tac.2026.3701606"
+    },
+    {
+      "date": "2026-11-28",
+      "doi": "10.1109/tro.2026.3758115",
+      "title": "Multimodal Delta-Action-Delta-State Dynamics Networks for Iterative Residual Policies: A Study of Planar Rope-Tip Control and Grappling",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3758115"
+    },
+    {
+      "date": "2026-11-28",
+      "doi": "10.1109/tro.2026.3756226",
+      "title": "HEHA: Bounded Suboptimal Planning for Constrained Routing and Its Use in Heterogeneous Multi-Robot Exploration of Unknown Environments",
+      "journal": "IEEE Transactions on Robotics",
+      "url": "https://doi.org/10.1109/tro.2026.3756226"
     }
   ],
   "digests": []
